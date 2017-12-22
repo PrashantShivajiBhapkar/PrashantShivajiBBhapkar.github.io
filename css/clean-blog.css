@@ -33,7 +33,7 @@ hr.small{max-width:100px;margin:15px auto;border-width:4px;border-color:white;}
 .navbar-custom.is-fixed .nav li a{color:#404040;}
 .navbar-custom.is-fixed .nav li a:hover,
 .navbar-custom.is-fixed .nav li a:focus{color:#0085a1;}
-.navbar-custom.is-visible{-webkit-transform:translate3d(0, 100%, 0);-moz-transform:translate3d(0, 100%, 0);-ms-transform:translate3d(0, 100%, 0);-o-transform:translate3d(0, 100%, 0);transform:translate3d(0, 100%, 0);}
+.navbar-custom.is-visible{transform: none}
 }
 .intro-header{background:no-repeat center center;background-color:#808080;background-attachment:scroll;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover;-o-background-size:cover;margin-bottom:50px;}
 .intro-header .site-heading,
