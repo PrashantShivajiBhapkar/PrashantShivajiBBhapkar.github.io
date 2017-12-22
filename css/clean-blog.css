@@ -26,7 +26,6 @@ hr.small{max-width:100px;margin:15px auto;border-width:4px;border-color:white;}
 .navbar-custom .nav li a:focus{color:rgba(255, 255, 255, 0.8);}
 }
 @media only screen and (min-width:1170px){
-.navbar-custom.is-fixed{position:fixed;top:-61px;background-color:rgba(255, 255, 255, 0.9);border-bottom:1px solid #f2f2f2;-webkit-transition:-webkit-transform 0.3s;-moz-transition:-moz-transform 0.3s;transition:transform 0.3s;}
 .navbar-custom.is-fixed .navbar-brand{color:#404040;}
 .navbar-custom.is-fixed .navbar-brand:hover,
 .navbar-custom.is-fixed .navbar-brand:focus{color:#0085a1;}
