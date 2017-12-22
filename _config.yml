@@ -1,5 +1,5 @@
 # Site settings
-title: Personal Website
+title: My Website
 default_author: Prashant Shivaji Bhapkar
 description: "Website of Prashant Shivaji Bhapkar"  # used in site head
 
@@ -7,8 +7,8 @@ description: "Website of Prashant Shivaji Bhapkar"  # used in site head
 google_analytics: UA-111462392-1
 # disque comments are broken if you send http:// along with url, this url is same as the one given on disqus
 # Deleting the value would remove it from footer.
-# disqus_url: shikherverma.com
-# disqus_id: shikherverma
+# disqus_url: 
+# disqus_id: 
 # register on feedburner and replace this url. Deleting the value will remove it from footer.
 feedburner_url: https://feedburner.google.com/fb/a/mailverify?uri=programmer-wannabe&amp;loc=en_US
 
@@ -16,10 +16,10 @@ feedburner_url: https://feedburner.google.com/fb/a/mailverify?uri=programmer-wan
 github_username:  PrashantShivajiBhapkar
 facebook_username:  prashant.bhapkar.1
 email: prashantbhpkr@gmail.com
-#stackoverflow_username: 6764571/shikher-verma
-#twitter_username : shikherverma42
+#stackoverflow_username: 
+#twitter_username : 
 linkedin_username : prashant-shivaji-bhapkar-9b076623
-# keybase_username : shikherverma
+# keybase_username : 
 copyright_name: Prashant Shivaji Bhapkar 
 rss : true
 
