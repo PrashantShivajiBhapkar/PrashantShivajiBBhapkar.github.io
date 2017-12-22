@@ -4191,6 +4191,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
           box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
 }
+header.sticky { position: fixed;
+}
 .navbar-collapse.in {
   overflow-y: auto;
 }
@@ -4325,6 +4327,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-nav {
   margin: 7.5px -15px;
+  position: fixed;
 }
 .navbar-nav > li > a {
   padding-top: 10px;
