@@ -4496,17 +4496,17 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 
+.navbar-default {
+  background-color: #ffffff;
+  border-color: #e7e7e7;
+}
+
 .navbar-default .navbar-brand{color:#404040;}
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus{color:#0085a1;}
 .navbar-default .nav li a{color:#404040;}
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus{color:#0085a1;}
-
-.navbar-default {
-  background-color: #ffffff;
-  border-color: #e7e7e7;
-}
 
 .navbar-default .navbar-brand {
   color: black;
