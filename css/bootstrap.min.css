@@ -7,6 +7,13 @@
   border-color: #e7e7e7;
 }
 
+.navbar-default.is-fixed .navbar-brand{color:#404040;}
+.navbar-default.is-fixed .navbar-brand:hover,
+.navbar-default.is-fixed .navbar-brand:focus{color:#0085a1;}
+.navbar-default.is-fixed .nav li a{color:#404040;}
+.navbar-default.is-fixed .nav li a:hover,
+.navbar-default.is-fixed .nav li a:focus{color:#0085a1;}
+
 .navbar-default .navbar-brand {
   color: black;
 }
