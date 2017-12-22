@@ -4501,10 +4501,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-default .navbar-brand{color:white;padding:20px;}
 .navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus{color:rgba(255, 255, 255, 0.8);}
+.navbar-default .navbar-brand:focus{color:#00a4c1;}
 .navbar-default .nav li a{color:white;padding:20px;}
 .navbar-default .nav li a:hover,
-.navbar-default .nav li a:focus{color:rgba(255, 255, 255, 0.8);}
+.navbar-default .nav li a:focus{color:#00a4c1;}
 
 .navbar-default .navbar-brand {
   color: #777;
