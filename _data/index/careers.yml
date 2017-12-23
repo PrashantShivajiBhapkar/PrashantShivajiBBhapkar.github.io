@@ -5,12 +5,22 @@
     detail: The University of Texas at Dallas
   desc:
     detail: >    
-      I am currently pursuing masters degree (MS) in ITM (Information Technology and Management) with concentration in Data Analytics and Business Intelligence. By the time I graduate, I would have gained thorough understading of various relevant areas like Statistics (for Data Science), Business analytics using various EDA techniques and Machine Learning Algorithms with implementation in R and SAS, Business Data Warehousing, Big Data concepts, High Performance Analytics, Web Analytics, Data Visualization and Project Management.
+      * Bullet 1 Pursuing MS in ITM (Information Technology and Management) with concentration in Data Analytics and Business Intelligence. 
+      * Bullet 2 Would have gained thorough understading of various relevant areas like 
+        * Statistics (for Data Science)
+        * Business analytics using various EDA techniques and Machine Learning Algorithms with implementation in R and SAS
+        * Business Data Warehousing 
+        * Big Data concepts
+        * High Performance Analytics 
+        * Web Analytics 
+        * Data Visualization 
+        * Project Management and Consulting
+        * System-Analysis and ways to design a system
   date:
     detail: August 2017 - Present, Dallas, USA
   job:
-    detail: Student, Graduate - Master of Science in Information Technology and Management
-            Current GPA - 4
+    detail: Graduate Student - Master of Science in Information Technology and Management
+            "Current GPA: 4"
   icon: fa-plus-square
 
 - name:
@@ -19,9 +29,9 @@
     detail: >
       I worked in 2 projects and developed numerous data centric PL/SQL programs to implement multifarious business functionalities on top of business's transaction and master data. My exposure was not limited only to coding. I learned various tools like Oracle EBS, Oracle Reports Builder, Oracle JDeveloper, Oracle BI/XML Publisher, Oracle SQL Developer, Dell STAT and HP ALM. Also, prior to working in production, I had scored 80/100 in the mandatory 3-months Infosys Technical Training which included areas like Java programming, PL/SQL programming, Software Engineering and Oracle Applications Framework.
   date:
-    detail: Dec 2014 - July 2017, Multiple locations within India
+    detail: Dec 2014 - July 2017, India
   job:
-    detail: Sr. Systems Engineer, Technical Consultant (Developer)
+    detail: Sr. Systems Engineer
   icon: fa-plus-square
 
 - name:
@@ -32,7 +42,7 @@
   date:
     detail: August 2010 - May 2014, Pune, India
   job:
-    detail: Student, Undergraduate - Bachelor of Engineering in Computer Science
+    detail: Undergraduate Student - Bachelor of Engineering in Computer Science
   icon: fa-plus-square
 
 - name:
