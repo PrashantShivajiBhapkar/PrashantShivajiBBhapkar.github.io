@@ -14,17 +14,11 @@ nowDateStr = nowDate.toISOString().slice(0, 10).replace(/-/g, "");
 rm('-rf', 'static/assets/*.min.js');
 rm('-rf', 'static/assets/*.min.css');
 
-cp('-f', 'node_modules/font-mfizz/dist/font-mfizz.eot', 'static/assets/');
-cp('-f', 'node_modules/font-mfizz/dist/font-mfizz.svg', 'static/assets/');
-cp('-f', 'node_modules/font-mfizz/dist/font-mfizz.ttf', 'static/assets/');
-cp('-f', 'node_modules/font-mfizz/dist/font-mfizz.woff', 'static/assets/');
-
 // change link/src files to new file path
 sed('-i', /(.*)[0-9]{8}(.*)/, '$1' + nowDateStr + '$2', '_includes/index_head.html');
 sed('-i', /(.*)[0-9]{8}(.*)/, '$1' + nowDateStr + '$2', '_includes/head.html');
 sed('-i', /(.*)[0-9]{8}(.*)/, '$1' + nowDateStr + '$2', '_includes/category.html');
 sed('-i', /(.*)[0-9]{8}(.*)/, '$1' + nowDateStr + '$2', '404.html');
-
 
 // compress js files function
 function compressjs(pagename, filename, filelist) {
