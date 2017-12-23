@@ -4,18 +4,23 @@
 - name:
     detail: The University of Texas at Dallas
   desc:
-    detail: >    
-      - Analyzed census data and built various Machine Learning algorithms to predict whether a person earns more or less than a specified threshold. <br>
-      - Would have gained thorough understading of various relevant areas like <br>
-        - Statistics (for Data Science) <br>
-        - Business analytics using various EDA techniques and Machine Learning Algorithms with implementation in R and SAS <br>
-        - Business Data Warehousing <br>
-        - Big Data concepts <br>
-        - High Performance Analytics <br>
-        - Web Analytics <br>
-        - Data Visualization <br> 
-        - Project Management and Consulting <br>
-        - System-Analysis and ways to design a system
+    detail: > 
+      <ul>
+        <li> Analyzed census data and built various Machine Learning algorithms to predict whether a person earns more or less than a specified threshold. </li>
+        <li>Would have gained thorough understading of various relevant areas like
+            <ul>
+                <li>Statistics (for Data Science) </li>
+                <li>Business analytics using various EDA techniques and Machine Learning Algorithms with implementation in R and SAS <br>
+                <li>Business Data Warehousing </li>
+                <li>Big Data concepts </li>
+                <li>High Performance Analytics </li>
+                <li>Web Analytics </li>
+                <li>Data Visualization </li> 
+                <li>Project Management and Consulting </li>
+                <li>System-Analysis and ways to design a system </li>
+            </ul>
+        </li>
+        </ul>
   date:
     detail: August 2017 - Present, Dallas, USA
   job:
