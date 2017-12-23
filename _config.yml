@@ -1,9 +1,9 @@
 # Welcome to Jekyll!
 
 # Website settings
-title: Jalpc
-description: Jack's blog,use Jekyll and github pages.
-keywords: Jack,Jalpc,blog,Jekyll,github,gh-pages
+title: Prashant Shivaji Bhapkar
+description: Prashant Shivaji Bhapkar
+keywords: Prashant Shivaji Bhapkar
 baseurl:
 url: http://www.jarrekk.com
 # url: http://127.0.0.1:4000
@@ -11,14 +11,14 @@ img_path: /static/assets/img/blog
 
 # author
 author:
-  name: Jarrekk
-  first_name: Kun
-  last_name: Jia
+  name: Prashant Shivaji Bhapkar
+  first_name: Prashant Shivaji
+  last_name: Bhapkar
   cv: http://cv.jarrekk.com
-  email: me@jarrekk.com
-  facebook_username: jiakunnj
-  github_username: jarrekk
-  linkedin_id: jarrekk
+  email: prashantbhpkr@gmail.com
+  facebook_username: prashant.bhapkar.1
+  github_username: PrashantShivajiBhapkar
+  linkedin_id: prashant-shivaji-bhapkar-9b076623
   avatar: /static/assets/img/landing/Jack.jpeg
   skill_icon1:
     - name: icon-python
@@ -26,26 +26,26 @@ author:
   skill_icon2:
     - name: icon-mongodb
     - name: icon-docker
-  desc: I am a Full Stack engineer with website development, automation Ops and writing scripts experience. Life is a continuous learning process, so work makes me more rigorous, travel makes my life more colorful. I can make lots of friends when I coding and travel.
+  desc: I am a software engineer.
 
 # comment
 disqus:
-  name: jalpc
+  name: prashantshivajibhapkar-com
 
 # analytics
 ## google analytics
 ga:
-  id: UA-93473370-1
+  id: UA-111462392-1
 
 go:
-  id: GTM-NHMS8GD
+  id: 
 
 ## growingIO
 gio:
   # id: a49d4901c7853da9
 
 ## donation
-donation: on
+donation: off
 
 # Build settings
 encoding: utf-8
