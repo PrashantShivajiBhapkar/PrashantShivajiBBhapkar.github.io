@@ -4,28 +4,13 @@
 - name:
     detail: The University of Texas at Dallas
   desc:
-    detail: > 
-      <ul>
-        <li> Analyzed census data and built various Machine Learning algorithms to predict whether a person earns more or less than a specified threshold. </li>
-        <li>Would have gained thorough understading of various relevant areas like
-            <ul>
-                <li>Statistics (for Data Science) </li>
-                <li>Business analytics using various EDA techniques and Machine Learning Algorithms with implementation in R and SAS <br>
-                <li>Business Data Warehousing </li>
-                <li>Big Data concepts </li>
-                <li>High Performance Analytics </li>
-                <li>Web Analytics </li>
-                <li>Data Visualization </li> 
-                <li>Project Management and Consulting </li>
-                <li>System-Analysis and ways to design a system </li>
-            </ul>
-        </li>
-        </ul>
+    detail: >    
+      I am focusing on Data Analytics and Business Intelligence. By the time I graduate, I would have gained thorough understading of various areas like Statistics (for Data Science), Business analytics using various EDA techniques and Machine Learning Algorithms with implementation in R and SAS, Business Data Warehousing, Big Data concepts, High Performance Analytics, Web Analytics, Data Visualization and Project Management.
   date:
     detail: August 2017 - Present, Dallas, USA
   job:
     detail: Graduate Student - Master of Science in Information Technology and Management
-            Current GPA - 4
+            Current GPA  4
   icon: fa-plus-square
 
 - name:
@@ -34,7 +19,7 @@
     detail: >
       I worked in 2 projects and developed numerous data centric PL/SQL programs to implement multifarious business functionalities on top of business's transaction and master data. My exposure was not limited only to coding. I learned various tools like Oracle EBS, Oracle Reports Builder, Oracle JDeveloper, Oracle BI/XML Publisher, Oracle SQL Developer, Dell STAT and HP ALM. Also, prior to working in production, I had scored 80/100 in the mandatory 3-months Infosys Technical Training which included areas like Java programming, PL/SQL programming, Software Engineering and Oracle Applications Framework.
   date:
-    detail: Dec 2014 - July 2017, India
+    detail: Dec 2014 - July 2017,Pune, India
   job:
     detail: Sr. Systems Engineer
   icon: fa-plus-square
@@ -58,7 +43,7 @@
   date:
     detail: April 1998 - March 2010, Pune, India
   job:
-    detail: Student, primary(1st-5th) and secondary(6th-12th)
+    detail: Student - Primary and Secondary
   icon: fa-plus-square
 
 #- name:
