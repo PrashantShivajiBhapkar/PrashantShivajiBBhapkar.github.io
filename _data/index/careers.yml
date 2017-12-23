@@ -2,144 +2,48 @@
 # if you don't have language feature(language.yml is empty), ignore "i18n" items
 
 - name:
-    detail: fungai.org
+    detail: The University of Texas at Dallas
   desc:
-    detail: >
-      I created fungai.org with the aim helping scientists and enthusiasts to easily identify wild mushroom species
-      from images using deep learning technologies. This project is in partnership with Intel.
-      Initial prototype stack: JavaScript, ReactJS, jason-server, ImageNet, Heroku.
-      Upcoming stack: Tensorflow, Python, Docker.
-
+    detail: >    
+      I am currently pursuing masters degree (MS) in ITM (Information Technology and Management) with concentration in Data Analytics and Business Intelligence. By the time I graduate, I would have gained thorough understading of various relevant areas like Statistics (for Data Science), Business analytics using various EDA techniques and Machine Learning Algorithms with implementation in R and SAS, Business Data Warehousing, Big Data concepts, High Performance Analytics, Web Analytics, Data Visualization and Project Management.
   date:
-    detail: Nov 2017 - present, London
+    detail: August 2017 - Present, Dallas, USA
   job:
-    detail: Project Owner, Full-stack Machine Learning Engineer
+    detail: Student, Graduate - Master of Science in Information Technology and Management
+            Current GPA - 4
   icon: fa-plus-square
 
 - name:
-    detail: Mathalope.co.uk
+    detail: Infosys Ltd. 
   desc:
     detail: >
-      I created Mathalope.co.uk to share notes and research findings in machine learning, full-stack development, and
-      programming. Since establishment the blog has been visited by 120,000+ students and professionals from
-      200+ countries. My current research focus is on combining machine learning with full-stack app development.
-      Blog Stack: WordPress, Gist, Mathjax, Markdown. Content Stack: Python, JavaScript, etc.
+      I worked in 2 projects and developed numerous data centric PL/SQL programs to implement multifarious business functionalities on top of business's transaction and master data. My exposure was not limited only to coding. I learned various tools like Oracle EBS, Oracle Reports Builder, Oracle JDeveloper, Oracle BI/XML Publisher, Oracle SQL Developer, Dell STAT and HP ALM. Also, prior to working in production, I had scored 80/100 in the mandatory 3-months Infosys Technical Training which included areas like Java programming, PL/SQL programming, Software Engineering and Oracle Applications Framework.
   date:
-    detail: Mar 2014 - present, London
+    detail: Dec 2014 - July 2017, Multiple locations within India
   job:
-    detail: Author, Full-stack Machine Learning Engineer
+    detail: Sr. Systems Engineer, Technical Consultant (Developer)
   icon: fa-plus-square
 
 - name:
-    detail: Intel Software Innovator
+    detail: University of Pune
   desc:
     detail: >
-      As an Intel® Software Innovator affiliate I have access to new Intel technologies (software and hardware)
-      and initiatives on creating and demonstrating forward-looking projects. Some related projects of mine include:
-      fungai.org, Life++, and HPC with Intel Xeon Phi. Current research focus mainly around AI and IoT.
+      I pursued bachelor's degree (Bachelor of Engineering) in Computer Science. I learned various core Computer Science concepts and had hands-on experience on languages like C, C++, SQL, PL/SQL and JAVA. As a final year project (Thesis project), I led my team in developing an NLP (Natural Language Processing) system to facilitate Hindi-language-learning. We implemented various natural-language-processing techniques like tokenization, parts-of-speech tagging, stemming etc. We also designed and implemented a novel rule-based disambiguation algorithm to resolve ambiguities in a given sentence
   date:
-    detail: Oct 2015 - present, London
+    detail: August 2010 - May 2014, Pune, India
   job:
-    detail: Independent Developer, AI Specialist
+    detail: Student, Undergraduate - Bachelor of Engineering in Computer Science
   icon: fa-plus-square
 
 - name:
-    detail: Dufrain Consulting | RBS
+    detail: Kendriya Vidyalaya (CBSE)
   desc:
     detail: >
-      Data Analytics Consultant at Royal Bank of Scotland (RBS) Commercial and Private Banking.
-      Owned the analytics and segmentation part of 3 high profile remediation projects.
-      Major tech stack: SAS, SQL, Oracle, Teradata, In-house credit risk systems
+      I developed various academic interests as a result of being exposed to those; Maths, Physics and Computer Science in particular. Also, I emerged as an adept keyboard player, participating in, and winning numerous state level and national level fine-art-competitions. 
   date:
-    detail: May 2016 - Apr 2017, London
+    detail: April 1998 - March 2010, Pune, India
   job:
-    detail: Data Analytics Consultant
-  icon: fa-plus-square
-
-- name:
-    detail: Minboso
-  desc:
-    detail: >
-      Developed a Ruby-on-rail web app prototype for a wellness startup company.
-      Tech stack: Ruby, Ruby-on-Rails, Heroku, PostgreSQL, SQLite3, Google App Engine (GAE), Google Datastore,
-      Python, Git, GitHub, Trello, JavaScript, jQuery, AJAX, Google Docs.
-  date:
-    detail: Jan 2016 - Apr 2016, London
-  job:
-    detail: Full-stack Developer
-  icon: fa-plus-square
-
-- name:
-    detail: 11 Hackathons over 11 weeks
-  desc:
-    detail: >
-      Took 3 months off and did 11 hackathons over 11 weeks.
-      Major highlights: 2nd place (5000 EURO) team award at the Allianz Connected Life Hackathon,best use of DARPA
-      open source tools in a Ministry of Defence (MoD) Hackathon, and meeting a bunch of long-term friends.
-      These experiences motivated me to become better in open source developments.
-  date:
-    detail: Oct 2015 - Dec 2015, London
-  job:
-    detail: Hackathon Competitor, Developer
-  icon: fa-plus-square
-
-- name:
-    detail: Citi, London
-  desc:
-    detail: >
-      Senior Data Analytics Developer and Assistant Vice President (AVP) of a large global investment bank at
-      Canary Wharf. Collaborated with a global remote team of tech and non-tech domain experts and senior
-      stakeholders based across London, New York, Singapore and Japan. Designed, developed and implemented the
-      global roll-out of a fully automated (SAS and SQL based) early-warning web reporting and forecast analytics
-      tool and process that helped protect the bank’s estate of 100,000 production systems from risk of overloading.
-      Used by 400+ global support teams to form preventative actions against the high risk cases. I also did many
-      other things at the earlier part at the bank - mostly within the technology and operation areas.
-      Tech Stack: SAS, SQL, Oracle, AutoSys Batch Scheduling, Windows / UNIX scripts, internal bank-wide databases.
-  date:
-    detail: Aug 2008 - Sep 2015, London
-  job:
-    detail: Assistant Vice President (AVP), Senior Data Analytics Developer, SAS Programmer
-  icon: fa-plus-square
-
-- name:
-    detail: Imperial College London
-  desc:
-    detail: >
-      MEng Aeronautical Engineering (2:1). All things aeroplanes such as aerodynamics (the airflow round the wings),
-      aircraft structures (the wings and body), thermodynamics (the engines), numerical simulation with programming
-      (Matlab and Fortran), Helicopter mechanics, incredible amount of maths and calculus, and finally a 4-month
-      ERASMAS exchange at Instituto Superior Técnico (IST) based in Lisbon/ Portugal - learning and writing up a thesis
-      on GPS. Met some amazing friends and surfed for the first time. During the earlier days I also did some
-      volunteering at the London Science Museum (building scientific databases) and Natural History Museum
-      (dissecting mosquitoes samples for malaria researches).
-  date:
-    detail: Aug 2004 - Aug 2008, London
-  job:
-    detail: Aeronautical Engineer, Undergraduate
-  icon: fa-plus-square
-
-- name:
-    detail: Cathay Pacific Airways
-  desc:
-    detail: >
-      Engineer at Cathay Pacific Engineering Department (Power-plant Team), with a focus on ensuring all
-      the aircraft engines are well maintained and ready to serve the fleets.
-  date:
-    detail: Jul 2007 - Aug 2008, Hong Kong
-  job:
-    detail: Aeronautical Engineer, Summer Intern
-  icon: fa-plus-square
-
-- name:
-    detail: Rolls Royce
-  desc:
-    detail: >
-      As a result of winning a short essay writing competition I was invited to a 3-week design workshop hosted
-      by Rolls-Royce, University of Sheffield and the European Association of Aerospace Students (EUROAVIA).
-  date:
-    detail: Jul 2007 - Jul 2007, Derby (UK)
-  job:
-    detail: Aerospace Engineer, EUROAVIA Project Team
+    detail: Student, primary(1st-5th) and secondary(6th-12th)
   icon: fa-plus-square
 
 #- name:
