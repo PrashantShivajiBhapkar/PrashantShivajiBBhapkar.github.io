@@ -20,6 +20,7 @@ sed('-i', /(.*)[0-9]{8}(.*)/, '$1' + nowDateStr + '$2', '_includes/head.html');
 sed('-i', /(.*)[0-9]{8}(.*)/, '$1' + nowDateStr + '$2', '_includes/category.html');
 sed('-i', /(.*)[0-9]{8}(.*)/, '$1' + nowDateStr + '$2', '404.html');
 
+
 // compress js files function
 function compressjs(pagename, filename, filelist) {
     console.log('Now compress ' + pagename + ' js files to ' + filename + ' ...')
