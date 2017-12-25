@@ -2,7 +2,7 @@
 
 # Website settings
 title: Prashant Shivaji Bhapkar
-description: Machine learning and Deep learning enthusiast.
+description: Software Engineer | Machine learning/Deep learning enthusiast.
 keywords: ai, machine learning, deep learning, Full-stack, Jalpc, github, gh-pages
 
 # option 1 - publish to http://127.0.0.1:4000/ or https://atlas7.github.io
@@ -33,7 +33,7 @@ author:  # change following line to your infomation.
   skill_icon2:
     - name: fa-linux
     - name: icon-apache
-  desc: Machine learning and Deep learning enthusiast. # Describe yourself.
+  desc: Software Engineer | Machine learning/Deep learning enthusiast. # Describe yourself.
 
 # comment
 disqus:  # if you wanna comment feature, go to https://disqus.com/ to get your configuration; if not, comment following two lines.
