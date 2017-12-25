@@ -19,7 +19,7 @@
   repo: 
   img: /static/assets/img/landing/MorphologyBasedPOSTagger.png
   desc: >
-    I led my team in the developing of an NLP (Natural Language Processing) system to facilitate Hindi-language-learning. We implemented various natural-language-processing techniques like tokenization, parts-of-speech tagging, stemming etc. We also designed and implemented a novel rule-based disambiguation algorithm to resolve ambiguities in a given sentence. The implementation was done on C#.Net.   
+    I led my team in the development of an NLP (Natural Language Processing) system to facilitate Hindi-language-learning. We implemented various natural-language-processing techniques like tokenization, parts-of-speech tagging, stemming etc. We also designed and implemented a novel rule-based disambiguation algorithm to resolve ambiguities in a given sentence. The implementation was done in C#.Net.   
 
 
 #- name: Jalpc
