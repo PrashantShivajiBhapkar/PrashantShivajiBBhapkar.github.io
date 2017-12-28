@@ -2,14 +2,14 @@
 # If you don't have language feature(language.yml is empty), ignore "i18n" items
 # Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
 
-- name: Word2Vec Python Implementation
+#- name: Word2Vec Python Implementation
 #  i18n:
-  url:
-  gh_user: PrashantShivajiBhapkar
-  repo: Word2Vec-Python-Implementation
-  img: /static/assets/img/landing/tomas-milkolov.jpg
-  desc: >
-    My attempt to implement the famous Word2Vec presented by Mikolov et al. in 2013. It enables in representing words as entities(vectors) in an n-dimensional space. This is one of the greatest breakthroughs in NLP research. It enables us to do more efficient, accurate and advanced processing on natural languages. And yes, the picture above is that of Milkolov's... in his honor.
+#  url:
+#  gh_user: PrashantShivajiBhapkar
+#  repo: Word2Vec-Python-Implementation
+#  img: /static/assets/img/landing/tomas-milkolov.jpg
+#  desc: >
+#    My attempt to implement the famous Word2Vec presented by Mikolov et al. in 2013. It enables in representing words as entities(vectors) in an n-dimensional space. This is one of the greatest breakthroughs in NLP research. It enables us to do more efficient, accurate and advanced processing on natural languages. And yes, the picture above is that of Milkolov's... in his honor.
     
 - name: Morphology Based POS Tagger with Disambiguation for Hindi Language
 #  i18n:
