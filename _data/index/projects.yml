@@ -12,16 +12,6 @@
     My attempt to implement the famous Word2Vec presented by Mikolov et al. in 2013. With the help of this, we can represent words as entities(vectors) in an n-dimensional space. This is a one of the great breakthroughs in NLP research as now, it's possible to do efficient and more accurate advance processing on natural language. The world gets better day by day!
     And yes, the picture above is that of Milokov's... in his honor.
     
-- name: PrashantShivajiBhapkar.githib.io
-#  i18n:
-  url: http://www.prashantshivajibhapkar.com/
-  gh_user: PrashantShivajiBhapkar
-  repo: PrashantShivajiBhapkar.github.io
-  img: /static/assets/img/landing/avatar.jpg
-  desc: >
-    (aka this website) My attempt to build a portfolio website with Jekyll and GitHub Pages.
-    It uses the beautiful Jalpc theme.
-    
 - name: Morphology Based POS Tagger with Disambiguation for Hindi Language
 #  i18n:
   url: 
@@ -31,6 +21,15 @@
   desc: >
     I led my team in the development of an NLP (Natural Language Processing) system to facilitate Hindi-language-learning. We implemented various natural-language-processing techniques like tokenization, parts-of-speech tagging, stemming etc. We also designed and implemented a novel rule-based disambiguation algorithm to resolve ambiguities in a given sentence. The implementation was done in C#.Net.   
 
+- name: PrashantShivajiBhapkar.githib.io
+#  i18n:
+  url: http://www.prashantshivajibhapkar.com/
+  gh_user: PrashantShivajiBhapkar
+  repo: PrashantShivajiBhapkar.github.io
+  img: /static/assets/img/landing/avatar.jpg
+  desc: >
+    (aka this website) My attempt to build a portfolio website with Jekyll and GitHub Pages.
+    It uses the beautiful Jalpc theme.    
 
 #- name: Jalpc
 #  i18n: jalpc
