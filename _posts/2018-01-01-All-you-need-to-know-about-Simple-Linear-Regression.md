@@ -17,7 +17,9 @@ Today, let's talk about Simple Linear Regression. What is it? What happens benea
 
 Linear Regression is a supervised Machine Learning algorithm as it relies on data for training. It is one of those Machine Learning algorithms that we, the people of Computer Science, have borrowed from Statistics.  As the name suggests, it's a linear model. Linear, as in, it tries to establish a linear relationship between the dependent and the independent variable. Let's try to understand it with the help of a simple example. Let's imagine that we have information about height and weight of some people. Following is this information plotted with the help of a scatter plot.
 
+<p align="center">
 ![Scatter Plot of Height V/S Weight](/static/assets/img/posts/LinearRegressionScatterPlot.JPG)
+</p>
 
 As we can see, there seems to be a linear relationship between height and weight. By that what I mean is, weight seems to increase linearly with height. Thus, there seems to be some relationship between height and weight. And as per the plot, the best we can say, at the moment, is that the relationship seems to be linear. But, how do we represent this relationship exactly? And how would that representation help us in any way, in terms of making a prediction, if any? That's exactly what our Linear Regression algorithm will help us find out.
 
@@ -33,12 +35,12 @@ Ok, that looks meaningful in our context now. But wait! What are these values b0
 
 I'll describe that simple concept here in short. Generally, a line in a 2-dimensional space is represented by the following equation:
 
-y = mx + b
+<center>y = mx + b</center>
 
 , where m is the slope of the line and b is the y-intercept.
 By now, you might have already gotten the main idea of Linear Regression. It'll help us find that straight line. Just that, in our case, that straight line would be represented by,
 
-weight = b0 + b1*height
+<center>weight = \beta0 + \beta1*height</center>
 
 Now, here we have our training data comprising heights and weights. In short, we have values for to put in for our "weight" and "height" variables in our equation. But, as you might have noticed, we don't know what the values of b0 and b1 are. What do we do to figure these values out? The answer is simple. We do nothing, but let our machine try to learn these values from our training data. Yes, that's what our algorithm will learn. After all, the term "Machine Learning" was not coined just randomly by some random guy playing some random sport at some random place at some random time. I guess you got it :).
 
@@ -46,7 +48,7 @@ But, how will our algorithm learn from the data about these values b0 and b1? Be
 
 Let's discuss what "Ordinary Least Squares" is. Basically, at the end of the day, we will have our algorithm predict the weights of various people based on their heights. These are called predictions. Let's denote a single prediction by y-hat-i (for the ith person). At the same time, we also have the true values of weights for the same set of values of heights. We call that true labels as y-i ( for the i-th person). Formally, we call a line the best-fit-line for which the value of "Ordinary Least Squares" (OLS) is the least. "Ordinary Least Squares" is a measure of error. It is given by:
 
-<OLS EQUATION>
+<center>OLS EQUATION</center>
 
 Now, coming back to how our Linear Regression Algorithm will learn the values of b0 and b1, it learns these value by plugging-in various values of same in our main equation at a time, which is:
 weight = b0 + b1*heights
@@ -57,9 +59,9 @@ In Machine Learning world, there are often some functions(cost functions/objecti
 
 We'll do gradient descent to minimize this objectve function. Here's how we'll do that. We'll initialize the weights b0 and b1 with some random values. Then we'll use that set of values of b0 and b1 to predict values of weights for the entire training set. This is called as one pass or one epoch. After this, we'll calculate the gradients (slopes) of the cost function with respect to these values of b0 and b1 for the overall cost. Let's call these gradients db0 and db1. Now, we'll subtract a fraction of these gradients from our initial values b0 and b1.  In short, we'll do the following:
 
-b0 = b0 - alpha*db0
+\beta0 = \beta0 - \alpha*d\beta0
 
-b1 = b1 - alpha*db1
+\beta1 = \beta1 - \alpha*d\beta1
 
 This will help us in descending towards the global minima, given our cost function is convex. It turns out that OLS is a conex function. Here, alpha is called the learning rate. It decides how long each step of the gradient descent will be while traveling towards the global minima. Generally, alpha should not be too large, as it results in overshooting the global minima and not too small as it takes a very long time to converge (reach global minima). A value of 0.001 or 0.0001 should be fine. But, we can experiment other values too.
 
