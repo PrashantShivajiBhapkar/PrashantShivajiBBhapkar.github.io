@@ -10,10 +10,6 @@ icon: icon-html
 ---
 
 Hello readers, wish you all a very happy new year!!
-<div style="width 320px;
-    padding: 10px;
-    border: 5px solid black;
-    margin: 0;">mjhkjhvkx.</div>
 <p align="justify">
 As we know, there are a lot of machine learning algorithms to implement, in order to solve our specific problems. But, will just knowing how to implement these, with the help of certain readymade library, save our day? Well, it might! But the truth is, just implementing them is not enough. Studying the rudiments of such algorithms not only helps in understanding these in great detail but also enhances our ability to implement them wisely as per the nature of the data.
 </p>
@@ -117,9 +113,6 @@ We'll do gradient descent to minimize this objectve function. Here's how we'll d
 <div style="font-size: 150%; font-weight: bold; ">
 <center>&beta;<sub>0</sub> = &beta;<sub>0</sub> - &alpha;*d&beta;<sub>0</sub></center>
 </div>
-<br>
-
-<br>
 <div style="font-size: 150%; font-weight: bold; ">	
 <center>&beta;<sub>1</sub> = &beta;<sub>1</sub> - &alpha;*d&beta;<sub>1</sub></center>
 </div>
@@ -130,5 +123,5 @@ This will help us in descending towards the global minima, given our cost functi
 </p>
 
 <p align="justify">
-So, we'll keep updating the values of &beta;<sub>0</sub> and &beta;<sub>1</sub> after each epoch which will help us move towards the global minima step by step untill the gradients (d&beta;<sub>0</sub> and d&beta;<sub>1</sub>)assume values close to or nearly 0. And then our model/algorithm is said to have learned these values. So this is how, Linear regression works to figure out the best-fit-line.
+So, we'll keep updating the values of &beta;<sub>0</sub> and &beta;<sub>1</sub> after each epoch which will help us move towards the global minima step by step untill the gradients (d&beta;<sub>0</sub> and d&beta;<sub>1</sub>) assume values close to or nearly 0. And then our model/algorithm is said to have learned these values. So this is how, Linear regression works to figure out the best-fit-line.
 </p>
