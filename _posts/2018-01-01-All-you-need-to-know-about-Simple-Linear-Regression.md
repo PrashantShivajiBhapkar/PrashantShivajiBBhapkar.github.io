@@ -9,6 +9,11 @@ tags: [MACHINE, LEARNING, Linear Regression]
 icon: icon-html
 ---
 
+---
+
+Hello readers, wish you all a very happy new year!!
+
+---
 Hello readers, wish you all a very happy new year!!
 
 As we know, there are a lot of machine learning algorithms to implement, in order to solve our specific problems. But, will just knowing how to implement these, with the help of certain readymade library, save our day? Well, it might! But the truth is, just implementing them is not enough. Studying the rudiments of such algorithms not only helps in understanding these in great detail but also enhances our ability to implement them wisely as per the nature of the data.
