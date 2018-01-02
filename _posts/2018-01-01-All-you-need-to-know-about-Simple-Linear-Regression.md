@@ -9,13 +9,11 @@ tags: [MACHINE, LEARNING, Linear Regression]
 icon: icon-html
 ---
 
----
-
 Hello readers, wish you all a very happy new year!!
-
----
-Hello readers, wish you all a very happy new year!!
-
+</br>
+</br>
+</br>
+</br>
 As we know, there are a lot of machine learning algorithms to implement, in order to solve our specific problems. But, will just knowing how to implement these, with the help of certain readymade library, save our day? Well, it might! But the truth is, just implementing them is not enough. Studying the rudiments of such algorithms not only helps in understanding these in great detail but also enhances our ability to implement them wisely as per the nature of the data.
 
 Today, let's talk about Simple Linear Regression. What is it? What happens beneath the surface? Why should we use it? When should we use it? What kind of problems can it solve? blah? blah? blah??? If these questions resonate with yours, then you might be at the right place. So, without any wait let's dive deep into this machine learning algorithm.
@@ -23,11 +21,8 @@ Today, let's talk about Simple Linear Regression. What is it? What happens benea
 Linear Regression is a supervised Machine Learning algorithm as it relies on data for training. It is one of those Machine Learning algorithms that we, the people of Computer Science, have borrowed from Statistics.  As the name suggests, it's a linear model. Linear, as in, it tries to establish a linear relationship between the dependent and the independent variable. Let's try to understand it with the help of a simple example. Let's imagine that we have information about height and weight of some people. Following is this information plotted with the help of a scatter plot.
 
 
-
-<center>![Scatter Plot of Height V/S Weight](/static/assets/img/posts/LinearRegressionScatterPlot.JPG)</center>
-
 <p align="center">
-  <img src="/static/assets/img/posts/LinearRegressionScatterPlot.JPG">
+  <img title="Height vs Weight" src="/static/assets/img/posts/LinearRegressionScatterPlot.JPG">
 </p>
 
 As we can see, there seems to be a linear relationship between height and weight. By that what I mean is, weight seems to increase linearly with height. Thus, there seems to be some relationship between height and weight. And as per the plot, the best we can say, at the moment, is that the relationship seems to be linear. But, how do we represent this relationship exactly? And how would that representation help us in any way, in terms of making a prediction, if any? That's exactly what our Linear Regression algorithm will help us find out.
