@@ -17,7 +17,7 @@ Today, let's talk about Simple Linear Regression. What is it? What happens benea
 
 Linear Regression is a supervised Machine Learning algorithm as it relies on data for training. It is one of those Machine Learning algorithms that we, the people of Computer Science, have borrowed from Statistics.  As the name suggests, it's a linear model. Linear, as in, it tries to establish a linear relationship between the dependent and the independent variable. Let's try to understand it with the help of a simple example. Let's imagine that we have information about height and weight of some people. Following is this information plotted with the help of a scatter plot.
 
-<IMAGE>
+![Scatter Plot of Height V/S Weight](/static/assets/img/posts/LinearRegressionScatterPlot.JPG)
 
 As we can see, there seems to be a linear relationship between height and weight. By that what I mean is, weight seems to increase linearly with height. Thus, there seems to be some relationship between height and weight. And as per the plot, the best we can say, at the moment, is that the relationship seems to be linear. But, how do we represent this relationship exactly? And how would that representation help us in any way, in terms of making a prediction, if any? That's exactly what our Linear Regression algorithm will help us find out.
 
