@@ -34,7 +34,7 @@ As we can see, there seems to be a linear relationship between height and weight
 As we know, Linear Regression algorithm assumes that there is a linear relationship between the independent and dependent variable. (Oh! by the way, in our case weight is the dependent variable and height the independent variable. Let's just assume that from now on.) It tries to represent this linear relationship in the following form:
 </p>
 
-<div style="font-size: 200%;">
+<div style="font-size: 150%; font-weight: bold; background-color:#F8F8F8">
 <center>y = b0 + (b1*x)</center>
 </div>
 
@@ -42,7 +42,7 @@ As we know, Linear Regression algorithm assumes that there is a linear relations
 Generally,  'y' is the independent variable and 'x' is the independent variable. Linear Regression assumes that 'y' is dependent on 'x' linearly. In our case, this equation would look something like:
 </p>
 
-<div style="font-size: 200%;">
+<div style="font-size: 150%; font-weight: bold; background-color:#F8F8F8">
 <center>weight = b0 + b1*height</center>
 </div>
 
@@ -53,7 +53,7 @@ Ok, that looks meaningful in our context now. But wait! What are these values b0
 I'll describe that simple concept here in short. Generally, a line in a 2-dimensional space is represented by the following equation:
 </p>
 
-<div style="font-size: 200%;">
+<div style="font-size: 150%; font-weight: bold; background-color:#F8F8F8">
 <center>y = mx + b</center>
 </div>
 
@@ -62,7 +62,7 @@ I'll describe that simple concept here in short. Generally, a line in a 2-dimens
 By now, you might have already gotten the main idea of Linear Regression. It'll help us find that straight line. Just that, in our case, that straight line would be represented by,
 </p>
 
-<div style="font-size: 200%;">
+<div style="font-size: 150%; font-weight: bold; background-color:#F8F8F8">
 <center>weight = b0 + b1*height</center>
 </div>
 
@@ -82,7 +82,7 @@ Let's discuss what "Ordinary Least Squares" is. Basically, at the end of the day
 Now, coming back to how our Linear Regression Algorithm will learn the values of b0 and b1, it learns these value by plugging-in various values of same in our main equation at a time, which is:
 </p>
 
-<div style="font-size: 200%;">
+<div style="font-size: 150%; font-weight: bold; background-color:#F8F8F8">
 <center>weight = b0 + b1*heights</center>
 </div>
 
@@ -96,11 +96,11 @@ In Machine Learning world, there are often some functions(cost functions/objecti
 We'll do gradient descent to minimize this objectve function. Here's how we'll do that. We'll initialize the weights b0 and b1 with some random values. Then we'll use that set of values of b0 and b1 to predict values of weights for the entire training set. This is called as one pass or one epoch. After this, we'll calculate the gradients (slopes) of the cost function with respect to these values of b0 and b1 for the overall cost. Let's call these gradients db0 and db1. Now, we'll subtract a fraction of these gradients from our initial values b0 and b1.  In short, we'll do the following:
 </p>
 
-<div style="font-size: 200%;">
+<div style="font-size: 150%; font-weight: bold; background-color:#F8F8F8">
 <center>b0 = b0 - alpha*db0</center>
 </div>
 
-<div style="font-size: 200%;">
+<div style="font-size: 150%; font-weight: bold; background-color:#F8F8F8">	
 
 <center>b1 = b1 - alpha*db1</center>
 
