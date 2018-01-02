@@ -35,7 +35,7 @@ As we know, Linear Regression algorithm assumes that there is a linear relations
 </p>
 
 <div>
-### **<center>y = b0 + (b1*x)</center>**
+<center>y = b0 + (b1*x)</center>
 </div>
 
 <p align="justify">
@@ -43,7 +43,7 @@ Generally,  'y' is the independent variable and 'x' is the independent variable.
 </p>
 
 <div>
-### **<center>weight = b0 + b1*height</center>**
+<center>weight = b0 + b1*height</center>
 </div>
 
 </p>
@@ -54,7 +54,7 @@ I'll describe that simple concept here in short. Generally, a line in a 2-dimens
 </p>
 
 <div>
-### **<center>y = mx + b</center>**
+<center>y = mx + b</center>
 </div>
 
 <p align="justify">
@@ -99,7 +99,9 @@ We'll do gradient descent to minimize this objectve function. Here's how we'll d
 </div>
 
 <div>
+
 ### **<center>b1 = b1 - alpha*db1</center>**
+
 </div>
 
 <p align="justify">
