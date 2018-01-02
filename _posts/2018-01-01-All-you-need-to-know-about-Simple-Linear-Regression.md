@@ -13,7 +13,7 @@ Hello readers, wish you all a very happy new year!!
 <div style="width 320px;
     padding: 10px;
     border: 5px solid black;
-    margin: 0;">Box 350px.</div>
+    margin: 0;">Box asdf sdf asf350px.</div>
 <p align="justify">
 As we know, there are a lot of machine learning algorithms to implement, in order to solve our specific problems. But, will just knowing how to implement these, with the help of certain readymade library, save our day? Well, it might! But the truth is, just implementing them is not enough. Studying the rudiments of such algorithms not only helps in understanding these in great detail but also enhances our ability to implement them wisely as per the nature of the data.
 </p>
@@ -34,7 +34,7 @@ As we can see, there seems to be a linear relationship between height and weight
 As we know, Linear Regression algorithm assumes that there is a linear relationship between the independent and dependent variable. (Oh! by the way, in our case weight is the dependent variable and height the independent variable. Let's just assume that from now on.) It tries to represent this linear relationship in the following form:
 </p>
 
-<div>
+<div style="font-size: 200%;">
 <center>y = b0 + (b1*x)</center>
 </div>
 
@@ -42,7 +42,7 @@ As we know, Linear Regression algorithm assumes that there is a linear relations
 Generally,  'y' is the independent variable and 'x' is the independent variable. Linear Regression assumes that 'y' is dependent on 'x' linearly. In our case, this equation would look something like:
 </p>
 
-<div>
+<div style="font-size: 200%;">
 <center>weight = b0 + b1*height</center>
 </div>
 
@@ -53,7 +53,7 @@ Ok, that looks meaningful in our context now. But wait! What are these values b0
 I'll describe that simple concept here in short. Generally, a line in a 2-dimensional space is represented by the following equation:
 </p>
 
-<div>
+<div style="font-size: 200%;">
 <center>y = mx + b</center>
 </div>
 
@@ -62,8 +62,8 @@ I'll describe that simple concept here in short. Generally, a line in a 2-dimens
 By now, you might have already gotten the main idea of Linear Regression. It'll help us find that straight line. Just that, in our case, that straight line would be represented by,
 </p>
 
-<div>
-### **<center>weight = b0 + b1*height</center>**
+<div style="font-size: 200%;">
+<center>weight = b0 + b1*height</center>
 </div>
 
 <p align="justify">
@@ -75,13 +75,15 @@ But, how will our algorithm learn from the data about these values b0 and b1? Be
 <p align="justify">
 Let's discuss what "Ordinary Least Squares" is. Basically, at the end of the day, we will have our algorithm predict the weights of various people based on their heights. These are called predictions. Let's denote a single prediction by y-hat-i (for the ith person). At the same time, we also have the true values of weights for the same set of values of heights. We call that true labels as y-i ( for the i-th person). Formally, we call a line the best-fit-line for which the value of "Ordinary Least Squares" (OLS) is the least. "Ordinary Least Squares" is a measure of error. It is given by:
 </p>
+
 **<center>OLS EQUATION</center>**
+
 <p align="justify">
 Now, coming back to how our Linear Regression Algorithm will learn the values of b0 and b1, it learns these value by plugging-in various values of same in our main equation at a time, which is:
 </p>
 
-<div>
-### **<center>weight = b0 + b1*heights</center>**
+<div style="font-size: 200%;">
+<center>weight = b0 + b1*heights</center>
 </div>
 
 <p align="justify">
@@ -94,13 +96,13 @@ In Machine Learning world, there are often some functions(cost functions/objecti
 We'll do gradient descent to minimize this objectve function. Here's how we'll do that. We'll initialize the weights b0 and b1 with some random values. Then we'll use that set of values of b0 and b1 to predict values of weights for the entire training set. This is called as one pass or one epoch. After this, we'll calculate the gradients (slopes) of the cost function with respect to these values of b0 and b1 for the overall cost. Let's call these gradients db0 and db1. Now, we'll subtract a fraction of these gradients from our initial values b0 and b1.  In short, we'll do the following:
 </p>
 
-<div>
-### **<center>b0 = b0 - alpha*db0</center>**
+<div style="font-size: 200%;">
+<center>b0 = b0 - alpha*db0</center>
 </div>
 
-<div>
+<div style="font-size: 200%;">
 
-### **<center>b1 = b1 - alpha*db1</center>**
+<center>b1 = b1 - alpha*db1</center>
 
 </div>
 
