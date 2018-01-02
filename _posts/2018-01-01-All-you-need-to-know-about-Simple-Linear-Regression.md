@@ -13,10 +13,14 @@ Hello readers, wish you all a very happy new year!!
 <div style="width 320px;
     padding: 10px;
     border: 5px solid black;
-    margin: 0;">Box asdf sdf asf350px.</div>
+    margin: 0;">mjhkjhvkx.</div>
 <p align="justify">
 As we know, there are a lot of machine learning algorithms to implement, in order to solve our specific problems. But, will just knowing how to implement these, with the help of certain readymade library, save our day? Well, it might! But the truth is, just implementing them is not enough. Studying the rudiments of such algorithms not only helps in understanding these in great detail but also enhances our ability to implement them wisely as per the nature of the data.
 </p>
+<br>
+<br>
+<br>
+<br>
 <p align="justify">
 Today, let's talk about Simple Linear Regression. What is it? What happens beneath the surface? Why should we use it? When should we use it? What kind of problems can it solve? blah? blah? blah??? If these questions resonate with yours, then you might be at the right place. So, without any wait let's dive deep into this machine learning algorithm.
 </p>
