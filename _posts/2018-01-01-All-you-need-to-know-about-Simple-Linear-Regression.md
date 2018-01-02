@@ -4,7 +4,7 @@ title:  "All you need to know about Simple Linear Regression"
 date:   2018-01-01
 desc: "All you need to know about Simple Linear Regression"
 keywords: "Machine-Leanring,blog,Algorithm"
-categories: [machine-learning]
+categories: [Machine-learning]
 tags: [MACHINE, LEARNING, Linear Regression]
 icon: icon-html
 ---
