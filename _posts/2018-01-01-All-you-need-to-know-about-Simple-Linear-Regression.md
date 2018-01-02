@@ -10,6 +10,10 @@ icon: icon-html
 ---
 
 Hello readers, wish you all a very happy new year!!
+<div style="width 320px;
+    padding: 10px;
+    border: 5px solid gray;
+    margin: 0;">The picture above is 350px wide. The total width of this element is also 350px.</div>
 
 As we know, there are a lot of machine learning algorithms to implement, in order to solve our specific problems. But, will just knowing how to implement these, with the help of certain readymade library, save our day? Well, it might! But the truth is, just implementing them is not enough. Studying the rudiments of such algorithms not only helps in understanding these in great detail but also enhances our ability to implement them wisely as per the nature of the data.
 
@@ -19,7 +23,7 @@ Linear Regression is a supervised Machine Learning algorithm as it relies on dat
 
 
 <p align="center">
-  <img alt="Detailed wallpaper collection item screenshot" title="The collection detail page includes zoomable images, object history, and public comments"  src="/static/assets/img/posts/LinearRegressionScatterPlot.JPG">
+  <img alt="Detailed wallpaper collection item screenshot" title="Height vs Weight"  src="/static/assets/img/posts/LinearRegressionScatterPlot.JPG">
 </p>
 
 As we can see, there seems to be a linear relationship between height and weight. By that what I mean is, weight seems to increase linearly with height. Thus, there seems to be some relationship between height and weight. And as per the plot, the best we can say, at the moment, is that the relationship seems to be linear. But, how do we represent this relationship exactly? And how would that representation help us in any way, in terms of making a prediction, if any? That's exactly what our Linear Regression algorithm will help us find out.
