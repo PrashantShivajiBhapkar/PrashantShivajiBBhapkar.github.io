@@ -17,7 +17,7 @@ As we know, there are a lot of machine learning algorithms to implement, in orde
 <p align="justify">
 Today, let's talk about Simple Linear Regression. What is it? What happens beneath the surface? Why should we use it? When should we use it? What kind of problems can it solve? blah? blah? blah??? If these questions resonate with yours, then you might be at the right place. So, without any wait let's dive deep into this machine learning algorithm.
 </p>
-
+<br>
 ## What is Simple Linear Regression?
 <p align="justify">
 Simple Linear Regression is a supervised Machine Learning algorithm as it relies on data for training. It is one of those Machine Learning algorithms that we have borrowed from Statistics.  As the name suggests, it's a linear model. Linear, as in, it tries to establish a linear relationship between the dependent and the independent variable. Let's try to understand it with the help of a simple example. Let's imagine that we have information about heights and weights of some people. Following is this information plotted on a scatter plot.
@@ -76,6 +76,7 @@ By now, you might have already gotten the main idea of Linear Regression. It'll 
 Now, here we have our training data comprising heights and weights. In short, we have values for to put in for our "weight" and "height" variables in our equation. But, as you might have noticed, we don't know what the values of <b>&beta;<sub>0</sub></b> and <b>&beta;<sub>1</sub></b> are. What do we do to figure these values out? The answer is simple. We do nothing, but let our machine try to learn these values from our training data. Yes, that's what our algorithm will learn. After all, the term "Machine Learning" was not coined just randomly by some random guy playing some random sport at some random place at some random time. I guess you got it :).
 </p>
 
+<br>
 ## How does the Machine actually learn?
 <p align="justify">
 How will our algorithm learn from the data about these values <b>&beta;<sub>0</sub></b> and <b>&beta;<sub>1</sub></b>? Let's focus on one important thing now. As we know, Linear Regression algorithm tries to find a line that best describes the relationship between the independent and dependent variables. Technically, we call that line the best-fit-line. But, how do we say that a given line is the best-fit-line? We should have some metric that would help us define the meaning of "best" in "best-fit-line". That metric is called "Ordinary Least Squares". 
@@ -98,16 +99,17 @@ But, the question - "How Linear Regression Algorithm will learn the values of <b
 In Machine Learning world, there are often some functions(cost functions/objective functions) that we are interested in minimizing or as we should call it more formally, "optimising". Optimizing these functions helps us find the required values of parameters (of these functions) which yield the least values (global/local minima) for these functions when plugged-in in their respective equations. In our case, we need to optimize OLS. The parameters of the OLS are y and y_pred<sup>i</sup>. y_pred<sup>i</sup> depends on the values of <b>&beta;<sub>0</sub></b> and &beta;<sub>1</sub>. Thus, optimising OLS will help us find the required values of <b>&beta;<sub>0</sub></b> and <b>&beta;<sub>1</sub></b> for which we'll have the least possible value for our objective function, which is OLS. 
 </p>
 
-## Gradient Descent - a quick overview
+<br>
+## Gradient Descent - Just an Overview
 <p align="justify">
-We'll do gradient descent to minimize this objectve function. Here's how we'll do that. We'll initialize the values of  <b>&beta;<sub>0</sub></b> and <b>&beta;<sub>1</sub></b> with some random values. Then we'll use these to predict values of weights for the entire training set. This is called as one pass or one epoch. After this, we'll calculate the gradients (slopes) of the cost function for these values of <b>&beta;<sub>0</sub></b> and <b>&beta;<sub>1</sub></b>. Let's call these gradients d<b>&beta;<sub>0</sub></b> and d&beta;<sub>1</sub>. Now, we'll subtract a fraction of these gradients from our initial values <b>&beta;<sub>0</sub></b> and &beta;<sub>1</sub>.  In short, we'll do the following:
+We'll do gradient descent to minimize this objectve function. Here's how we'll do that. We'll initialize the values of  <b>&beta;<sub>0</sub></b> and <b>&beta;<sub>1</sub></b> with some random values. Then we'll use these to predict values of weights for the entire training set. This is called as one pass or one epoch. After this, we'll calculate the gradients (slopes) of the cost function for these values of <b>&beta;<sub>0</sub></b> and <b>&beta;<sub>1</sub></b>. Let's call these gradients <b>d&beta;<sub>0</sub></b> and <b>d&beta;<sub>1</sub></b>. Now, we'll subtract a fraction of these gradients from our initial values <b>&beta;<sub>0</sub></b> and <b>&beta;<sub>1</sub></b>.  In short, we'll do the following:
 </p>
 
 <br>
-<div style="font-size: 100%; font-weight: bold; ">
+<div style="font-size: 150%; font-weight: bold; ">
 <center>&beta;<sub>0</sub> = <b>&beta;<sub>0</sub></b> - <b>&alpha</b>;*d&beta;<sub>0</sub></center>
 </div>
-<div style="font-size: 100%; font-weight: bold; ">	
+<div style="font-size: 150%; font-weight: bold; ">	
 <center>&beta;<sub>1</sub> = <b>&beta;<sub>1</sub></b> - <b>&alpha</b>;*d&beta;<sub>1</sub></center>
 </div>
 <br>
@@ -120,13 +122,14 @@ This will help us in descending towards the global minima, given our cost functi
 Thus, we'll keep updating the values of <b>&beta;<sub>0</sub></b> and <b>&beta;<sub>1</sub></b> after each epoch. This will help us move towards the global minima step by step untill the gradients (d<b>&beta;<sub>0</sub></b> and d&beta;<sub>1</sub>) assume values close to or nearly 0. And then our model/algorithm is said to have learned these values.
 </p>
 
-## Ok, what's there after learning values of &beta;<sub>0</sub> and &beta;<sub>1</sub>
+<br>
+## Ok, The Model Learned the Values. What Now?
 <p>
 Well, once our model has learned the values of <b>&beta;<sub>0</sub></b> and <b>&beta;<sub>1</sub></b>m we can use it to make predictions about dependent variable given we have information about independent variable. In our case, we can predict the weight of a person if we know their height. In real life, businesses might be least interested in predicting weight of someone. But, they might still want to predict something. It might be something that might have impact on their revenue. It can be anything. But most importantly, if that "something" is dependent linearly only on one variable, then now we better know what to do.
 </p>
 
-
+<br>
 ## Conclusion
 <p>So, now we learned that Simple Linear Regression is a Supervised Machine Learning algorithm which is used to describe a linear relationship between the independent and dependent variable. Unfortunately it cannot work on more than 2 variables. For that, we have another algorithm which is called as Multiple Linear Regression. Also, I apologize for not going into great detail while explaining gradient descent. It could've consumed a lot of space :).  Anyway, I've tried to give all the necessary details of all the relevant concepts at appropriate depth. Please feel free to comment down as to how you found this post. Please feel free to share if you liked it. Thanks. :)</p>
 
-#### You may check the PYTHON implementation of how to code Linear Regression from scratch [here](https://github.com/PrashantShivajiBhapkar/Machine-Learning-Algorithms-from-Scratch/blob/master/LinearRegression.py)
+> You may check the PYTHON implementation of how to code Linear Regression from scratch [here](https://github.com/PrashantShivajiBhapkar/Machine-Learning-Algorithms-from-Scratch/blob/master/LinearRegression.py)
