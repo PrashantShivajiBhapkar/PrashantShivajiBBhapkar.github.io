@@ -90,7 +90,7 @@ Let's discuss what "Ordinary Least Squares" is. Basically, at the end of the day
 </p>
 
 <p>
-where <b><i>h<sub>θ</sub>(X<sup>(i)</sup>)<i><b> is our Hypothesis which is nothin but the function given by  <i><b>weight = <b>&beta;<sub>0</sub></b> + &beta;<sub>1</sub>*heights</b></i>, <i><b>y<sup>(i)</sup></b></i> is the true label and <i><b>m</b></i> is the number of training examples.
+where <b><i>h<sub>θ</sub>(X<sup>(i)</sup>)</i></b> is our Hypothesis which is nothin but the function given by  <i><b>weight = <b>&beta;<sub>0</sub></b> + &beta;<sub>1</sub>*heights</b></i>, <i><b>y<sup>(i)</sup></b></i> is the true label and <i><b>m</b></i> is the number of training examples.
 </p>
 <p align="justify">
 But, the question - "How Linear Regression Algorithm will learn the values of <b>&beta;<sub>0</sub></b> and <b>&beta;<sub>1</sub></b>?" still remains unanswered. It turns out that it learns these values by plugging-in various values of same in our main equation, which is <b>weight = <b>&beta;<sub>0</sub></b> + &beta;<sub>1</sub>*heights</b>. After plugging in these values, it thus calculates the predictions(weights) <b>y_pred<sup>(i)</sup></b> for all the training examples and calculates the OLS. After that, it does "something" to minimize that value of OLS. Now, what is that "something"? That "something" typically is an algorithm that comes under the category of "Optimization Algorithms". In our case, we'll use one of those algorithms called Gradient Descent.
@@ -132,4 +132,4 @@ Well, once our model has learned the values of <b>&beta;<sub>0</sub></b> and <b>
 ## Conclusion
 <p>We learned that Simple Linear Regression is a Supervised Machine Learning algorithm which is used to describe a linear relationship between the independent and dependent variable. Unfortunately, as a matter of fact, it cannot work on more than 2 variables. For that, we have another algorithm which is called Multiple Linear Regression. Also, I know I didn't go into much details of gradient descent. But that could've consumed a lot of space and resulted in a bit of digression :). Having said that, I've tried to give all necessary details of almost all the relevant concepts, at appropriate depth, pertaining to Simple Linear Regression. Please feel free to share your thoughts on this post and share if you liked it. Thanks. :)</p>
 
-> You may check a PYTHON implementation where I have coded Linear Regression from scratch [here].(https://github.com/PrashantShivajiBhapkar/Machine-Learning-Algorithms-from-Scratch/blob/master/LinearRegression.py)
+> You may check a PYTHON implementation where I have coded Linear Regression from scratch [here](https://github.com/PrashantShivajiBhapkar/Machine-Learning-Algorithms-from-Scratch/blob/master/LinearRegression.py).
