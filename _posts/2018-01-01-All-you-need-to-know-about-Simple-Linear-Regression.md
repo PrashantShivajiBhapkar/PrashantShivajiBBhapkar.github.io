@@ -5,8 +5,8 @@ date:   2018-01-01
 desc: "All you need to know about Simple Linear Regression"
 keywords: "Machine-Leanring,blog,Algorithm"
 categories: [Machine-learning]
-tags: [MACHINE, LEARNING, Linear Regression]
-icon: icon-html
+tags: [MACHINE LEARNING, Simple Linear Regression, Linear Regression, OLS]
+icon: 
 ---
 
 Hello readers, wish you all a very happy new year!!
@@ -73,16 +73,16 @@ By now, you might have already gotten the main idea of Linear Regression. It'll 
 </p>
 
 <p align="justify">
-Now, here we have our training data comprising heights and weights. In short, we have values for to put in for our "weight" and "height" variables in our equation. But, as you might have noticed, we don't know what the values of <b>&beta;<sub>0</sub></b> and <b>&beta;<sub>1</sub></b> are. What do we do to figure these values out? The answer is simple. We do nothing, but let our machine try to learn these values from our training data. Yes, that's what our algorithm will learn. After all, the term "Machine Learning" was not coined just randomly by some random guy playing some random sport at some random place at some random time. I guess you got it :).
+Now, here we have our training data comprising heights and weights. In short, we have values to supply to "weight" and "height" variables in our equation. But, as you might have noticed, we don't know what the values of <b>&beta;<sub>0</sub></b> and <b>&beta;<sub>1</sub></b> are. What do we do to figure these values out? The answer is simple. We do nothing, but let our machine try to learn these values from our training data, that is from the values of weights and heights that we have. Yes, that's what our algorithm will do, it will learn. After all, the term "Machine Learning" was not coined just randomly by some random guy playing some random sport at some random place at some random time. I guess you got it :).
 </p>
 
 <br>
 ## How does the Machine actually learn?
 <p align="justify">
-How will our algorithm learn from the data about these values <b>&beta;<sub>0</sub></b> and <b>&beta;<sub>1</sub></b>? Let's focus on one important thing now. As we know, Linear Regression algorithm tries to find a line that best describes the relationship between the independent and dependent variables. Technically, we call that line the best-fit-line. But, how do we say that a given line is the best-fit-line? We should have some metric that would help us define the meaning of "best" in "best-fit-line". That metric is called "Ordinary Least Squares". 
+How will our algorithm learn from the data about these values <b>&beta;<sub>0</sub></b> and <b>&beta;<sub>1</sub></b>? Let's focus on one important thing now. Linear Regression algorithm tries to find a line that best describes the relationship between the independent and dependent variables. Technically, we call that line the best-fit-line. But, how do we say that a given line is the best-fit-line? We should have some metric that would help us define the meaning of "best" in "best-fit-line". That metric is called "Ordinary Least Squares". 
 </p>
 <p align="justify">
-Let's discuss what "Ordinary Least Squares" is. Basically, at the end of the day, we will have our algorithm predict the weights of various people based on their heights. These are called predictions. Let's denote a single prediction by <b>y_pred<sup>(i)</sup></b> (for the ith person). At the same time, we also have the true values of weights for the same set of people. We call those true labels as <b>y<sup>(i)</sup></b> ( for the i-th person). We take all the predictions of weights <b>y_pred<sup>(i)</sup></b> and true labels <b>y<sup>(i)</sup></b> over our entire training data. We then find the difference between each <b>y_pred<sup>(i)</sup></b> and <b>y<sup>(i)</sup></b> pair and then add all such differences together. The best fit line is that line for which the value of this metric (OLS) is the least. Thus, "Ordinary Least Squares" gives us a measure of how well our predictions for values of <b>&beta;<sub>0</sub></b> and <b>&beta;<sub>1</sub></b>. We formally call functions like these in Machine Learning as cost functions. The equation of OLS can be represented as:
+Let's discuss what "Ordinary Least Squares" is. Basically, at the end of the day, we will have our algorithm predict the weights of various people based on their heights. These are called predictions. Let's denote a single prediction by <b>y_pred<sup>(i)</sup></b> (for the i<sup>th</sup> person). At the same time, we also have true values of weights for the same set of people. We denote a single true labels by <b>y<sup>(i)</sup></b> ( for the i<sup>th</sup> person). We take all the predictions of weights <b>y_pred<sup>(i)</sup></b> and true labels <b>y<sup>(i)</sup></b> over our entire training data. We then find the difference between each <b>y_pred<sup>(i)</sup></b> and <b>y<sup>(i)</sup></b> pair and then square that difference. Then we add all such squared-differences together and then take their average. That's the value of our OLS metric or as we call it more formally, cost function. The best fit line is that line for which this value is the least among all other combinations. Thus, "Ordinary Least Squares" gives us a measure of how well our parameters <b>&beta;<sub>0</sub></b> and <b>&beta;<sub>1</sub></b> are doing their job in predicting the target value (weight). We formally call functions like this (OLS) in Machine Learning as cost functions. Now, let me give you an opportunity to extol the laconicism of math-parlance by giving you the equation of OLS that describes this entire paragraph in just one line and attempts to belittle my verbose explanation :( :p . In short, OLS can be calculated by using the following equation:
 </p>
 
 <p align="center">
@@ -90,46 +90,46 @@ Let's discuss what "Ordinary Least Squares" is. Basically, at the end of the day
 </p>
 
 <p>
-where h<sub>θ</sub>(X<sup>(i)</sup>) is our Hypothesis which is nothin but <i><b>h<sub>θ</sub>(X<sup>(i)</sup>)</b></i> or weight or <i><b>y_pred<sup>(i)</sup> = &beta;<sub>0</sub> + &beta;<sub>1</sub></b></i>, <i><b>y<sup>i</sup></b></i> is the true label and <i>m</i> is the number of training examples.
+where <b><i>h<sub>θ</sub>(X<sup>(i)</sup>)<i><b> is our Hypothesis which is nothin but the function given by  <i><b>weight = <b>&beta;<sub>0</sub></b> + &beta;<sub>1</sub>*heights</b></i>, <i><b>y<sup>(i)</sup></b></i> is the true label and <i><b>m</b></i> is the number of training examples.
 </p>
 <p align="justify">
-But, the question - "How Linear Regression Algorithm will learn the values of <b>&beta;<sub>0</sub></b> and &beta;<sub>1</sub>?" still remains unanswered. It turns out that it learns these value by plugging-in various values of same in our main equation at a time, which is <b>weight = <b>&beta;<sub>0</sub></b> + &beta;<sub>1</sub>*heights</b>. After plugging in these values, it thus calculates the predictions(weights) <b>y_pred<sup>(i)</sup></b> for all the training examples and calculates the OLS. After that, it does "something" to minimize that value of OLS. Now, what is that "something"? That "something" typically is an algorithm that comes under the category of "Optimization Algorithms". In our case, we'll use one of those algorithms called as Gradient Descent.
+But, the question - "How Linear Regression Algorithm will learn the values of <b>&beta;<sub>0</sub></b> and <b>&beta;<sub>1</sub></b>?" still remains unanswered. It turns out that it learns these values by plugging-in various values of same in our main equation, which is <b>weight = <b>&beta;<sub>0</sub></b> + &beta;<sub>1</sub>*heights</b>. After plugging in these values, it thus calculates the predictions(weights) <b>y_pred<sup>(i)</sup></b> for all the training examples and calculates the OLS. After that, it does "something" to minimize that value of OLS. Now, what is that "something"? That "something" typically is an algorithm that comes under the category of "Optimization Algorithms". In our case, we'll use one of those algorithms called Gradient Descent.
 </p>
 <p align="justify">
-In Machine Learning world, there are often some functions(cost functions/objective functions) that we are interested in minimizing or as we should call it more formally, "optimising". Optimizing these functions helps us find the required values of parameters (of these functions) which yield the least values (global/local minima) for these functions when plugged-in in their respective equations. In our case, we need to optimize OLS. The parameters of the OLS are y and y_pred<sup>i</sup>. <b>y_pred<sup>(i)</sup></b> depends on the values of <b>&beta;<sub>0</sub></b> and &beta;<sub>1</sub>. Thus, optimising OLS will help us find the required values of <b>&beta;<sub>0</sub></b> and <b>&beta;<sub>1</sub></b> for which we'll have the least possible value for our objective function, which is OLS. 
+In Machine Learning world, there are often some functions (cost functions/objective functions) that we are interested in minimizing or as we should call it more formally, "optimising". Optimizing these functions helps us find the required values of parameters (of these functions) which yield the least value (global/local minima) for these functions when plugged-in in their respective equations. In our case, we need to optimize OLS. The parameters of OLS are <b>y</b> and <b>y_pred<sup>i</sup></b>. <b>y_pred<sup>(i)</sup></b> depends on the values of <b>&beta;<sub>0</sub></b> and <b>&beta;<sub>1</sub></b>. Thus, optimising OLS will help us find the required values of <b>&beta;<sub>0</sub></b> and <b>&beta;<sub>1</sub></b> for which we'll have the least possible value for our objective function (OLS). 
 </p>
 
 <br>
 ## Gradient Descent - Just an Overview
 <p align="justify">
-We'll do gradient descent to minimize this objectve function. Here's how we'll do that. We'll initialize the values of  <b>&beta;<sub>0</sub></b> and <b>&beta;<sub>1</sub></b> with some random values. Then we'll use these to predict values of weights for the entire training set. This is called as one pass or one epoch. After this, we'll calculate the gradients (slopes) of the cost function for these values of <b>&beta;<sub>0</sub></b> and <b>&beta;<sub>1</sub></b>. Let's call these gradients <b>d&beta;<sub>0</sub></b> and <b>d&beta;<sub>1</sub></b>. Now, we'll subtract a fraction of these gradients from our initial values <b>&beta;<sub>0</sub></b> and <b>&beta;<sub>1</sub></b>.  In short, we'll do the following:
+We'll do gradient descent to minimize our objectve function. Here's how we'll do that. We'll initialize the values of  <b>&beta;<sub>0</sub></b> and <b>&beta;<sub>1</sub></b> with some random values. Then we'll use these to predict values of weights for the entire training set. This is called as one pass or one epoch. After this, we'll calculate the gradients (slopes) of the cost function for these values of <b>&beta;<sub>0</sub></b> and <b>&beta;<sub>1</sub></b>. Let's call these gradients <b>d&beta;<sub>0</sub></b> and <b>d&beta;<sub>1</sub></b>. Now, we'll subtract a fraction of these gradients from our initial values <b>&beta;<sub>0</sub></b> and <b>&beta;<sub>1</sub></b>.  In short, we'll do something like this:
 </p>
 
 <br>
 <div style="font-size: 150%; font-weight: bold; ">
-<center>&beta;<sub>0</sub> = <b>&beta;<sub>0</sub></b> - <b>&alpha</b>;*d&beta;<sub>0</sub></center>
+<center>&beta;<sub>0</sub> = <b>&beta;<sub>0</sub></b> - <b>&alpha;</b>*d&beta;<sub>0</sub></center>
 </div>
 <div style="font-size: 150%; font-weight: bold; ">	
-<center>&beta;<sub>1</sub> = <b>&beta;<sub>1</sub></b> - <b>&alpha</b>;*d&beta;<sub>1</sub></center>
+<center>&beta;<sub>1</sub> = <b>&beta;<sub>1</sub></b> - <b>&alpha;</b>*d&beta;<sub>1</sub></center>
 </div>
 <br>
 
 <p align="justify">
-This will help us in descending towards the global minima, given our cost function is convex. It turns out that OLS is a convex function. Here, <b>&alpha</b>; is called the learning rate. It decides how long each step of the gradient descent will be while traveling towards the global minima. Generally, <b>&alpha</b>; should not be too large, as it results in overshooting the global minima and not too small as it takes a very long time to converge (reach global minima). A value of 0.001 or 0.0001 should be fine. But, we can experiment other values too.
+This will help us in descending towards the global minima, given our cost function is convex. It turns out that OLS is a convex function. Here, <b>&alpha;</b> is called learning rate. It decides how long each step of gradient descent will be while traveling towards the global minima. Generally, <b>&alpha;</b> should not be too large, as it results in overshooting the global minima and not too small as it takes very long to converge (reach global minima). A value of 0.001 or 0.0001 should be fine. But, no one curtails our liberty to experiment other values too.
 </p>
 
 <p align="justify">
-Thus, we'll keep updating the values of <b>&beta;<sub>0</sub></b> and <b>&beta;<sub>1</sub></b> after each epoch. This will help us move towards the global minima step by step untill the gradients (d<b>&beta;<sub>0</sub></b> and d&beta;<sub>1</sub>) assume values close to or nearly 0. And then our model/algorithm is said to have learned these values.
+Thus, we'll keep updating values of <b>&beta;<sub>0</sub></b> and <b>&beta;<sub>1</sub></b> after each epoch. This will help us move towards the global minima step by step until the gradients (d<b>&beta;<sub>0</sub></b> and d&beta;<sub>1</sub>) assume values close to, or nearly 0. And then our model/algorithm will be said to have learned these values.
 </p>
 
 <br>
-## Ok, The Model Learned the Values. What Now?
+## Ok, The Model Learned the values of <b>&beta;<sub>0</sub></b> and <b>&beta;<sub>1</sub></b>. What Now?
 <p>
-Well, once our model has learned the values of <b>&beta;<sub>0</sub></b> and <b>&beta;<sub>1</sub></b>, we can use it to make predictions about dependent variable given we have information about independent variable. In our case, we can predict the weight of a person if we know their height. In real life, businesses might be least interested in predicting weight of someone. But, they might still want to predict something. It might be something that might have impact on their revenue. It can be anything. But most importantly, if that "something" is dependent linearly only on one variable, then now we better know what to do.
+Well, once our model has learned the values of <b>&beta;<sub>0</sub></b> and <b>&beta;<sub>1</sub></b>, we can use it to make predictions about dependent variable given we have information about independent variable. In our case, we can predict the weight of a person if we know their height. In real life, businesses might be least interested in predicting weight of someone. But, they might still want to predict something. It might be something that might have impact on their revenue. It can be anything. But most importantly, if that "something" is dependent linearly only on one variable, then now we better know which Machine Learning algorithm to turn to.
 </p>
 
 <br>
 ## Conclusion
-<p>So, now we learned that Simple Linear Regression is a Supervised Machine Learning algorithm which is used to describe a linear relationship between the independent and dependent variable. Unfortunately it cannot work on more than 2 variables. For that, we have another algorithm which is called as Multiple Linear Regression. Also, I apologize for not going into great detail while explaining gradient descent. It could've consumed a lot of space :).  Anyway, I've tried to give all the necessary details of all the relevant concepts at appropriate depth. Please feel free to comment down as to how you found this post. Please feel free to share if you liked it. Thanks. :)</p>
+<p>We learned that Simple Linear Regression is a Supervised Machine Learning algorithm which is used to describe a linear relationship between the independent and dependent variable. Unfortunately, as a matter of fact, it cannot work on more than 2 variables. For that, we have another algorithm which is called Multiple Linear Regression. Also, I know I didn't go into much details of gradient descent. But that could've consumed a lot of space and resulted in a bit of digression :). Having said that, I've tried to give all necessary details of almost all the relevant concepts, at appropriate depth, pertaining to Simple Linear Regression. Please feel free to share your thoughts on this post and share if you liked it. Thanks. :)</p>
 
-> You may check the PYTHON implementation of how to code Linear Regression from scratch [here](https://github.com/PrashantShivajiBhapkar/Machine-Learning-Algorithms-from-Scratch/blob/master/LinearRegression.py)
+> You may check a PYTHON implementation where I have coded Linear Regression from scratch [here](https://github.com/PrashantShivajiBhapkar/Machine-Learning-Algorithms-from-Scratch/blob/master/LinearRegression.py).
