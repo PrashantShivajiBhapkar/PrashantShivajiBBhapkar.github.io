@@ -151,8 +151,8 @@ By now, you might have already guessed that the values of 'W' and 'b' are someth
 Now that we know the representation of a hyperplane, let's discuss how exactly we find that hyperplane and build the model. But before that, let's take a look at the main idea behind building the model.
 </p>
 
-### Main Idea of the Model
-#### Representation of the Model
+## Main Idea of the Model
+### Representation of the Model
 <p align="justify">
 Let's assume that the equation of the hyperplane that we need to find is as follows:
 </p>
@@ -190,7 +190,7 @@ f(Xi) = W.T . X + b < 0
 </div>
 </p>
 
-#### Classification after learning
+### Classification after learning
 
 <p align="justify">
 Once we're done with the learning, we would know the "optimized" values of the weight vector (W) and bias (b). Now during implementation/classification, we will find the value of f(Xk) for a new example 'k'. We'll then classify 'k' as a positive or negative example based on this value of f(Xk). If f(Xk) is positive, we'll classify 'k' as a positive example. If f(Xk) is negative, we'll classify 'k' as a negative example.
