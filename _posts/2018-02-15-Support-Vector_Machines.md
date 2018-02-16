@@ -37,7 +37,7 @@ Before we start with the construction of hyperplane, let's first look at how do 
 
 
 <br>
-<div style="font-size: 150%; font-weight: bold; ">
+<div style="font-size: 100%; font-weight: bold; ">
 <center>y = mx + b</center>
 </div>
 <br>
@@ -53,7 +53,7 @@ We can represent the same equation in the following form:
 </p>
 
 <br>
-<div style="font-size: 150%; font-weight: bold; ">
+<div style="font-size: 100%; font-weight: bold; ">
 <center>f(x) = W.T . X + b</center>
 </div>
 <br>
@@ -71,7 +71,7 @@ For example, for a line given by  y - 2x + 3 = 0
 </p>
 
 <p align="justify">
-<div style="font-size: 150%; font-weight: bold; ">
+<div style="font-size: 100%; font-weight: bold; ">
 <center>
 W.T = [1, -2], X.T = [x, y] and bias, b = 3
 </center>
@@ -89,7 +89,7 @@ In 3-D, as we discussed, this hyperplane is what we call a "plane". Similar to t
 </p>
 
 <p align="justify">
-<div style="font-size: 150%; font-weight: bold; ">
+<div style="font-size: 100%; font-weight: bold; ">
 <center>
 aX + bY + cZ + d = 0
 </center>
@@ -101,7 +101,7 @@ This equation can also be represented alternatively as,
 </p>
 
 <p align="justify">
-<div style="font-size: 150%; font-weight: bold; ">
+<div style="font-size: 100%; font-weight: bold; ">
 <center>
 W.T . X + B = 0
 </center>
@@ -117,7 +117,7 @@ For example, for the equation of a line, 2x + 3y + 4z + 3 = 0,
 </p>
 
 <p align="justify">
-<div style="font-size: 150%; font-weight: bold; ">
+<div style="font-size: 100%; font-weight: bold; ">
 <center>
 W.T = [2, 3, 4], X.T = [x, y, z] and bias = b = 3
 </center>
@@ -131,7 +131,7 @@ To generalize, a hyperplane, in an n-dimensional hyperspace, can be represented 
 </p>
 
 <p align="justify">
-<div style="font-size: 150%; font-weight: bold; ">
+<div style="font-size: 100%; font-weight: bold; ">
 <center>
 f(x) = W.T . X + B
 </center>
@@ -159,7 +159,7 @@ Let's assume that the equation of the hyperplane that we need to find is as foll
 
 
 <p align="justify">
-<div style="font-size: 150%; font-weight: bold; ">
+<div style="font-size: 100%; font-weight: bold; ">
 <center>
 f(x) = W.T . X + b, in n-dimensional hyperspace
 </center>
@@ -171,7 +171,7 @@ Now, this would divide the hyperspace into 2 halves as discussed. One will have 
 </p>
 
 <p align="justify">
-<div style="font-size: 150%; font-weight: bold; ">
+<div style="font-size: 100%; font-weight: bold; ">
 <center>
 f(Xi) = W.T . X + b > 0
 </center>
@@ -183,7 +183,7 @@ Similarly, for a negative example Xj, f(Xj) should yield a value less than 0 as 
 </p>
 
 <p align="justify">
-<div style="font-size: 150%; font-weight: bold; ">
+<div style="font-size: 100%; font-weight: bold; ">
 <center>
 f(Xi) = W.T . X + b < 0
 </center>
@@ -220,7 +220,7 @@ Now for a positive example Xi, we can say,
 </p>
 
 <p align="justify">
-<div style="font-size: 150%; font-weight: bold; ">
+<div style="font-size: 100%; font-weight: bold; ">
 <center>
 f(Xi) = W.T . X + b > 0
 </center>
@@ -232,7 +232,7 @@ Similarly, for a negative example Xi, we can say,
 </p>
 
 <p align="justify">
-<div style="font-size: 150%; font-weight: bold; ">
+<div style="font-size: 100%; font-weight: bold; ">
 <center>
 f(Xi) = W.T . X + b < 0
 </center>
@@ -248,7 +248,7 @@ In a more general way, we can say,
 </p>
 
 <p align="justify">
-<div style="font-size: 150%; font-weight: bold; ">
+<div style="font-size: 100%; font-weight: bold; ">
 <center>
 Yi * (W.T . X + b) > 0
 </center>
@@ -283,7 +283,7 @@ Let's assume that the maximum margin that we desire to obtain which is feasible,
 Then, for all Xi, di should be greater than or equal to Gamma.
 
 <p align="justify">
-<div style="font-size: 150%; font-weight: bold; ">
+<div style="font-size: 100%; font-weight: bold; ">
 <center>
 (W.T . X + b) / ||W|| >= Gamma
 </center>
@@ -291,7 +291,7 @@ Then, for all Xi, di should be greater than or equal to Gamma.
 </p>
 
 <p align="justify">
-<div style="font-size: 150%; font-weight: bold; ">
+<div style="font-size: 100%; font-weight: bold; ">
 <center>
 W.T . X + b >= Gamma * ||W||
 </center>
@@ -301,7 +301,7 @@ W.T . X + b >= Gamma * ||W||
 Let's rescale Gamma * ||W|| to 1. So,
 
 <p align="justify">
-<div style="font-size: 150%; font-weight: bold; ">
+<div style="font-size: 100%; font-weight: bold; ">
 <center>
 W.T . X + b >= 1, if x is a positive training example, and
 </center>
@@ -309,7 +309,7 @@ W.T . X + b >= 1, if x is a positive training example, and
 </p>
 
 <p align="justify">
-<div style="font-size: 150%; font-weight: bold; ">
+<div style="font-size: 100%; font-weight: bold; ">
 <center>
 W.T . X + b <= -1, if x is a negative training example
 </center>
@@ -321,7 +321,7 @@ Now, let's bring in Yi again (Yi = +1 or -1, represents classes) to make our mat
 </p>
 
 <p align="justify">
-<div style="font-size: 150%; font-weight: bold; ">
+<div style="font-size: 100%; font-weight: bold; ">
 <center>
 Yi * (W.T . X + b) >= 1
 </center>
@@ -331,7 +331,7 @@ Yi * (W.T . X + b) >= 1
 Here the equality holds true only for support vectors. Thus for a support vector Xi, we'll have,
 
 <p align="justify">
-<div style="font-size: 150%; font-weight: bold; ">
+<div style="font-size: 100%; font-weight: bold; ">
 <center>
 Yi * (W.T . Xi + b) = 1
 </center>
@@ -343,7 +343,7 @@ We saw that W.T . Xi + b is a measure of the distance of Xi from our hyperplane 
 </p>
 
 <p align="justify">
-<div style="font-size: 150%; font-weight: bold; ">
+<div style="font-size: 100%; font-weight: bold; ">
 <center>
 Gamma = (W.T . X + b) / ||W||
 </center>
@@ -355,7 +355,7 @@ Now, we want to maximize Gamma. You can now say that the minimum value of ||W|| 
 </p>
 
 <p align="justify">
-<div style="font-size: 150%; font-weight: bold; ">
+<div style="font-size: 100%; font-weight: bold; ">
 <center>
 Yi * (W.T . Xi + b) = 1
 </center>
@@ -374,7 +374,7 @@ Lagrange taught us how to minimize a function subject to some constraints. He in
 </p>
 
 <p align="justify">
-<div style="font-size: 150%; font-weight: bold; ">
+<div style="font-size: 100%; font-weight: bold; ">
 <center>
 L(x, lambda) = f(x) - lambda * g(x)
 </center>
