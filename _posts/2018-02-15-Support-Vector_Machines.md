@@ -20,14 +20,8 @@ Support Vector Machine is a supervised machine learning algorithm which is gener
 How does SVM do classification tasks? We'll try to understand each and every aspect of that here. I'll not just give you a basic intuition behind SVM. Rather, my intention is to make each and everything that goes "behind the scenes" of SVM as lucid as possible. So if understanding the same is your purpose, you're at the right place. Happy reading :)
 </p>
 
-<br>
-## What is Simple Linear Regression?
-<p align="justify">
-Simple Linear Regression is a supervised Machine Learning algorithm as it relies on data for training. It is one of those Machine Learning algorithms that we have borrowed from Statistics.  As the name suggests, it's a linear model. Linear, as in, it tries to establish a linear relationship between the dependent and the independent variable. Let's try to understand it with the help of a simple example. Let's imagine that we have information about heights and weights of some people. Following is this information plotted on a scatter plot.
-</p>
-
 ## Representation of Input Examples
-<p align="center">
+<p align="justify">
 As we know, in supervised machine learning, we need some training examples to train our algorithms. We generally process these examples and then come up with a function, or as we formally call that a "hypotheses", that best maps the input features to outputs/dependent values. In case of SVM, like other models, examples are represented in an n-dimensional hyperspace as vectors, where n is the number of features. For instance, if a training example, a human being, has features height, weight, and nose-length (nose-length!! Really!! That's weird, but still consider that for now :)), then this training example, which is a human being, can be represented as a vector in a 3-dimensional space with axes representing features-axes height, weight, and nose-length. Likewise,  in an n-dimensional space, all the training examples are represented as vectors where n = number of features. Basically, each example exists in the space based on their features.  
 </p>
 
