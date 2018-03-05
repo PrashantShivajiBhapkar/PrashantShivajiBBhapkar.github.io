@@ -152,8 +152,7 @@ than 0 as given below. <br> **f(Xj) = W.Transpose . X + b < 0**
 **Classification after learning**<br> Once we’re done with the learning, we
 would know the “**optimized**” values of the **weight** vector (**W**) and
 **bias** (**b**) for which the error or loss would be minimum. Now during
-implementation/classification, while trying to classify a new example **‘Xk’,
-**we will find the value of **f(Xk)**. We’ll then classify **‘Xk’ **as a
+implementation/classification, while trying to classify a new example **‘Xk’,** we will find the value of **f(Xk)**. We’ll then classify **‘Xk’** as a
 positive or negative example based on this value of **f(Xk)**. If **f(Xk)** is
 **positive**, we’ll classify **‘k’** as a **positive** example. If **f(Xk)** is
 **negative**, we’ll classify ‘**k**’ as a **negative** example.
