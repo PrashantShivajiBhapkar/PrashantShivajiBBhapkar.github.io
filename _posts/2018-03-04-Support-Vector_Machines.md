@@ -1,3 +1,14 @@
+---
+layout: post
+title:  "Demystifying Support Vector Machines"
+date:   2018-03-04
+desc: "All you need to know about Support Vector Machines"
+keywords: "Machine-Leanring,blog,Algorithm"
+categories: [Machine-learning]
+tags: [MACHINE LEARNING, Support Vector Machines, Linear Classification, SVM]
+icon: 
+---
+
 # Demystifying Support Vector Machines
 
 Let’s talk about one of the most powerful supervised machine learning
