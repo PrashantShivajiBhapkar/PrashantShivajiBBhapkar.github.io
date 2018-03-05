@@ -91,7 +91,7 @@ W.Transpose . X + B,**
 
 where **W** is the **weight** vector which contains the coefficients of **x
 **and **y**.<br> For example, for a line given by x-2y+3 = 0,<br> **W** = [1,
--2], **X **= [x, y] and bias **b** = 3
+-2], **X** = [x, y] and bias **b** = 3
 
 > The vector [1, -2] will always be normal to the line y — 2x + 3 = 0. You may try
 > plotting things out to get a better clarity
@@ -106,8 +106,8 @@ represented as,<br> **aX + bY + cZ + d = 0**
 This equation can also be represented alternatively as,<br> **W.Transpose . X +
 B = 0,**
 
-where **W **is the **weight** vector containing the coefficients of features
-**X**, **Y**, and **Z**. **W **is always normal to the plane and thus gives an
+where **W** is the **weight** vector containing the coefficients of features
+**X**, **Y**, and **Z**. **W** is always normal to the plane and thus gives an
 idea about the orientation of the plane and b is the bias which represents the
 position of the hyper-plane.<br> For example, for the equation of a line, 2x +
 3y + 4z + 3 = 0,<br> W = [2, 3, 4], X = [x, y, z] and bias, B= 3
@@ -117,11 +117,11 @@ position of the hyper-plane.<br> For example, for the equation of a line, 2x +
 To generalize, a hyperplane, in an n-dimensional hyperspace, can be represented
 by the following equation:<br> **f(x) = W.Transpose . X + B,**
 
-where **W **and **X **are vectors of dimension ’n’ which is the number of
-features of training examples. **W **is the **weight** vector that contains the
+where **W **and **X** are vectors of dimension ’n’ which is the number of
+features of training examples. **W** is the **weight** vector that contains the
 coefficients of corresponding feature axes in **X**. Also, it is always normal
 to the given plane and thus gives an idea about the orientation of the plane in
-an n-dimensional hyperspace. **B **is the **bias **which describes the position
+an n-dimensional hyperspace. **B** is the **bias** which describes the position
 of the plane in an n-dimensional hyperspace.<br> By now, you might have already
 guessed that the values of ‘**W**’ and ‘**B**’ are something that we need our
 algorithm to learn. But how? let’s get the intuition behind building SVM model.
