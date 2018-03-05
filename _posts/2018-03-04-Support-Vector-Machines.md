@@ -17,11 +17,11 @@ introduction.
 
 ### Introduction
 
-Support Vector Machine or **SVM ** is a supervised machine learning algorithm
+Support Vector Machine or SVM is a supervised machine learning algorithm
 which is generally used for classification tasks. The idea was presented by
 Vladimir N. Vapnik and Alexey Ya. Chervonenkis in 1963 assuming that the data
 points are linearly separable. Later, Vladimir N. Vapnik extended this initial
-idea and introduced something called as **“kernel trick”** to enable non-linear
+idea and introduced something called as “kernel trick” to enable non-linear
 classifications too.
 
 ### The Intention
@@ -44,8 +44,8 @@ example, a human being for instance, has features height, weight, and
 nose-length (nose-length!! Really!! That’s weird, but still consider that for
 now :)), then this training example, which is a human being, can be represented
 as a vector in a 3-dimensional space with axes representing features-height,
-weight, and nose-length. Likewise, examples having **n **features can be
-represented in an **n**-dimensional hyperspace as vectors. Basically, each
+weight, and nose-length. Likewise, examples having *n* features can be
+represented in an *n*-dimensional hyperspace as vectors. Basically, each
 example exists in the space where it’s location is determined by the values of
 it’s features.
 
@@ -59,7 +59,7 @@ n-dimensional hyperspace, it is called as a hyper-plane. The main idea or
 assumption is that, whatever is the case *(1-D, 2-D or n-D)*, whether it’s a
 line, plane or hyper-plane, the decision boundary is linear in nature and it
 cuts the hyperspace in 2 halves in such a way that all the examples of, say
-class **C1**, lie in one half and all the others of, say class **C2**, lie in
+class *C1*, lie in one half and all the others of, say class *C2*, lie in
 the other. Thus, we can use that hyper-plane, or decision boundary, as a
 classifier. So our objective is to find a hyper-plane in that n-dimensional
 hyperspace which cuts or divides that hyperspace in such a way that all the
@@ -151,13 +151,13 @@ Similarly, for a negative example **Xj**, **f(Xj)** should yield a value less
 than 0 as given below. <br> **f(Xj) = W.Transpose . X + b < 0**
 
 **Classification after learning**<br> Once we’re done with the learning, we
-would know the “**optimized**” values of the **weight **vector (**W**) and
-**bias **(**b**) for which the error or loss would be minimum. Now during
-implementation/classification, while trying to classify a new example **‘Xk’,
-**we will find the value of **f(Xk)**. We’ll then classify** ‘Xk’ **as a
-positive or negative example based on this value of **f(Xk)**. If **f(Xk)** is
-**positive**, we’ll classify **‘k’** as a **positive **example. If **f(Xk)** is
-**negative**, we’ll classify ‘**k**’ as a **negative **example.
+would know the “**optimized**” values of the *weight* vector (*W*) and
+*bias *(*b*) for which the error or loss would be minimum. Now during
+implementation/classification, while trying to classify a new example *‘Xk’,
+*we will find the value of *f(Xk)*. We’ll then classify* ‘Xk’ *as a
+positive or negative example based on this value of *f(Xk)*. If *f(Xk)* is
+*positive*, we’ll classify *‘k’* as a *positive *example. If *f(Xk)* is
+*negative*, we’ll classify ‘*k*’ as a *negative *example.
 
 **Finding the Hyper-plane**<br> Now, how do we find the hyper-plane? Let’s
 consider the following 2-dimensional figure.
@@ -191,19 +191,19 @@ either of the sides.
 Now for a positive example **Xi**, we can say,<br> ** f(Xi) = W.Transpose . X +
 b > 0**
 
-Similarly, for a negative example **Xj**, we can say,<br> ** f(Xj) = W.Transpose
-. X + b < 0**
+Similarly, for a negative example *Xj*, we can say,<br> * f(Xj) = W.Transpose
+. X + b < 0*
 
-Now, let’s introduce a variable **Yi**, for mathematical convenience, which
-represents the class of the* *example **i**. Thus, it can have a value of either
-**+1** or **-1**.
+Now, let’s introduce a variable *Yi*, for mathematical convenience, which
+represents the class of the* *example *i*. Thus, it can have a value of either
+*+1* or *-1*.
 
-In a more general way, we can say,<br> **Yi * (W.Transpose . X + b) > 0**
+In a more general way, we can say,<br> *Yi * (W.Transpose . X + b) > 0*
 
-Let’s investigate what we just said. Here if **‘i’** belongs to the positive
-class, then **Yi **is positive and **(W.Transpose . X + b)** is also positive.
+Let’s investigate what we just said. Here if *‘i’* belongs to the positive
+class, then *Yi *is positive and *(W.Transpose . X + b)* is also positive.
 Thus their product is positive. Similarly, if **‘i’** belong to the negative
-class, then **Yi** is negative and **(W.Transpose . X + b)** is also negative.
+class, then *Yi* is negative and *(W.Transpose . X + b)* is also negative.
 However, the product of these still remains positive. So no matter which class
 is the example from, the above equation will always hold true.
 
@@ -227,66 +227,66 @@ hyper-planes that pass through support vectors). We need to respect this
 condition when we try to maximize the margin mathematically. This condition, is
 referred to as a “constraint”, in mathematical parlance.**
 
-Now, the distance between a vector, say **Xi**, and our target hyper-plane can
+Now, the distance between a vector, say *Xi*, and our target hyper-plane can
 be given by,
 
-**di = (W.Transpose . X + b) / ||W||**
+*di = (W.Transpose . X + b) / ||W||*
 
-Let’s assume that the **maximum margin** that we desire to obtain, which is
-feasible, is **Gamma**. Then, for all **Xi**, **di **should be greater than or
-equal to **Gamma**.
+Let’s assume that the *maximum margin* that we desire to obtain, which is
+feasible, is *Gamma*. Then, for all *Xi*, *di *should be greater than or
+equal to *Gamma*.
 
-**(W.Transpose . X + b) / ||W|| >= Gamma**
+*(W.Transpose . X + b) / ||W|| >= Gamma*
 
-**=> W.Transpose . X + b >= Gamma * ||W||**
+*=> W.Transpose . X + b >= Gamma * ||W||*
 
-Now, let’s re scale **Gamma * ||W||** to **1**. So,
+Now, let’s re scale *Gamma * ||W||* to *1*. So,
 
-**W.Transpose . X + b >= 1**, if **x** is a **positive **training example,
-and<br> **W.Transpose . X + b <= -1**, if **x** is a **negative **training
+*W.Transpose . X + b >= 1*, if *x* is a *positive *training example,
+and<br> *W.Transpose . X + b <= -1*, if *x* is a *negative *training
 example
 
-Now, let’s bring in **Yi ***(Yi = +1 or -1, represents classes) *to make our
+Now, let’s bring in *Yi **(Yi = +1 or -1, represents classes) *to make our
 math a bit more convenient and try to represent the above two equations in just
 one equation.
 
-**Yi * (W.Transpose . X + b) >= 1 ***(oh Math! you’re so beautiful :))*
+*Yi * (W.Transpose . X + b) >= 1 **(oh Math! you’re so beautiful :))*
 
 Here the equality holds true only for support vectors. Thus for a support vector
-**Xi**, we’ll have,
+*Xi*, we’ll have,
 
-**Yi * (W.Transpose . Xi + b) = 1**
+*Yi * (W.Transpose . Xi + b) = 1*
 
-We saw that “**W.Transpose . Xi + b”** is a measure of the distance of **Xi
-**from our hyper-plane **(W.Transpose . X + b)** and **Gamma **is the distance
-between the support vector(s) and our hyper-plane. Thus **Gamma **(for support
+We saw that “*W.Transpose . Xi + b”* is a measure of the distance of *Xi
+*from our hyper-plane *(W.Transpose . X + b)* and *Gamma *is the distance
+between the support vector(s) and our hyper-plane. Thus *Gamma *(for support
 vectors obviously) can be written as,
 
-**Gamma = (W.Transpose . X + b) / ||W||**
+*Gamma = (W.Transpose . X + b) / ||W||*
 
-Now, we want to maximize **Gamma**. You can now say that the maximum value of
-**Gamma** is **infinity **as** **the minimum value of **||W||** is **0**. Yes,
-you are right. The maximum possible value of **Gamma** is **infinity**. **BUT**,
-that is true when we **don’t **have any constraints. If you look closely,
-**Gamma **is the distance between our hyper-plane and support vectors. And for
-support vectors, the following condition **MUST **hold true,
+Now, we want to maximize *Gamma*. You can now say that the maximum value of
+*Gamma* is *infinity *as* *the minimum value of *||W||* is *0*. Yes,
+you are right. The maximum possible value of *Gamma* is *infinity*. *BUT*,
+that is true when we *don’t *have any constraints. If you look closely,
+*Gamma *is the distance between our hyper-plane and support vectors. And for
+support vectors, the following condition *MUST *hold true,
 
-**Yi * (W.Transpose . Xi + b) = 1**
+*Yi * (W.Transpose . Xi + b) = 1*
 
-This is our **constraint**. So we need to minimize **||W||** **SUBJECT** to the
-constraint **Yi * (W.Transpose . Xi + b) = 1**. Hence, we need to do a
+This is our *constraint*. So we need to minimize *||W||* *SUBJECT* to the
+constraint *Yi * (W.Transpose . Xi + b) = 1*. Hence, we need to do a
 constrained optimization here. Well, thanks to Joseph-Louis Lagrange, we can
 very well do that with ease. Now, once we are done with this optimization, we’ll
-get the optimal values for our **weight **vector **W **and **bias b.**
+get the optimal values for our *weight *vector *W *and *bias b.*
 
-> **And that’s all we wanted!! That’s the end of learning phase of our algorithm.
+> *And that’s all we wanted!! That’s the end of learning phase of our algorithm.
 > Our model/machine would be said to have learned something based on
-something.What are these ‘some-things’. I guess you know now.**
+something.What are these ‘some-things’. I guess you know now.*
 
 So reader, this marks the end of your journey with me in learning SVM where now
 I pass the baton to you and hope that you complete your final, remaining short
-part of the journey with no one other than **Mr. Joseph-Louis Lagrange**. Read
-about how we do constrained optimizations with **Lagrange multipliers** and
+part of the journey with no one other than *Mr. Joseph-Louis Lagrange*. Read
+about how we do constrained optimizations with *Lagrange multipliers* and
 you’ll solve the final piece of this puzzle. It’s not that difficult. Just watch
 some [Khan Academy
 Videos](https://www.khanacademy.org/math/multivariable-calculus/applications-of-multivariable-derivatives/constrained-optimization/a/lagrange-multipliers-single-constraint)
@@ -299,7 +299,7 @@ those readers reading about SVM for the very first time. Yes I admit the fact
 that the subject looks a bit difficult to comprehend in the very first exposure
 to it. However, I’ve tried to be as lucid as possible in explaining the relevant
 concepts keeping in mind the first flyers especially. Finally, believe me,
-**you’ll learn everything you want**. Just be a bit patient and keep on reading
+*you’ll learn everything you want*. Just be a bit patient and keep on reading
 from one source or the other about the concept you want to learn. I hope this
 post helped in clarifying stuff pertaining to SVM and that this was not a
 perplexing explanation. Was it? or was it rather boring? Let me know in the
