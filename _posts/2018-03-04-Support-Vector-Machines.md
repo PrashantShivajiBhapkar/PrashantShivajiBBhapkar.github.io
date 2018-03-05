@@ -44,7 +44,7 @@ example, a human being for instance, has features height, weight, and
 nose-length (nose-length!! Really!! That’s weird, but still consider that for
 now :)), then this training example, which is a human being, can be represented
 as a vector in a 3-dimensional space with axes representing features-height,
-weight, and nose-length. Likewise, examples having **n **features can be
+weight, and nose-length. Likewise, examples having **n** features can be
 represented in an **n**-dimensional hyperspace as vectors. Basically, each
 example exists in the space where it’s location is determined by the values of
 it’s features.
@@ -89,7 +89,7 @@ the position of the line.
 We can represent the same equation in the following form:<br> **f(x) =
 W.Transpose . X + B,**
 
-where **W** is the **weight **vector which contains the coefficients of **x
+where **W** is the **weight** vector which contains the coefficients of **x
 **and **y**.<br> For example, for a line given by x-2y+3 = 0,<br> **W** = [1,
 -2], **X **= [x, y] and bias **b** = 3
 
@@ -106,7 +106,7 @@ represented as,<br> **aX + bY + cZ + d = 0**
 This equation can also be represented alternatively as,<br> **W.Transpose . X +
 B = 0,**
 
-where **W **is the **weight **vector containing the coefficients of features
+where **W **is the **weight** vector containing the coefficients of features
 **X**, **Y**, and **Z**. **W **is always normal to the plane and thus gives an
 idea about the orientation of the plane and b is the bias which represents the
 position of the hyper-plane.<br> For example, for the equation of a line, 2x +
@@ -118,7 +118,7 @@ To generalize, a hyperplane, in an n-dimensional hyperspace, can be represented
 by the following equation:<br> **f(x) = W.Transpose . X + B,**
 
 where **W **and **X **are vectors of dimension ’n’ which is the number of
-features of training examples. **W **is the **weight **vector that contains the
+features of training examples. **W **is the **weight** vector that contains the
 coefficients of corresponding feature axes in **X**. Also, it is always normal
 to the given plane and thus gives an idea about the orientation of the plane in
 an n-dimensional hyperspace. **B **is the **bias **which describes the position
@@ -151,7 +151,7 @@ Similarly, for a negative example **Xj**, **f(Xj)** should yield a value less
 than 0 as given below. <br> **f(Xj) = W.Transpose . X + b < 0**
 
 **Classification after learning**<br> Once we’re done with the learning, we
-would know the “**optimized**” values of the **weight **vector (**W**) and
+would know the “**optimized**” values of the **weight** vector (**W**) and
 **bias **(**b**) for which the error or loss would be minimum. Now during
 implementation/classification, while trying to classify a new example **‘Xk’,
 **we will find the value of **f(Xk)**. We’ll then classify** ‘Xk’ **as a
@@ -277,7 +277,7 @@ This is our **constraint**. So we need to minimize **||W||** **SUBJECT** to the
 constraint **Yi * (W.Transpose . Xi + b) = 1**. Hence, we need to do a
 constrained optimization here. Well, thanks to Joseph-Louis Lagrange, we can
 very well do that with ease. Now, once we are done with this optimization, we’ll
-get the optimal values for our **weight **vector **W **and **bias b.**
+get the optimal values for our **weight** vector **W** and **bias b.**
 
 > **And that’s all we wanted!! That’s the end of learning phase of our algorithm.
 > Our model/machine would be said to have learned something based on
