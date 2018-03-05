@@ -305,14 +305,3 @@ post helped in clarifying stuff pertaining to SVM and that this was not a
 perplexing explanation. Was it? or was it rather boring? Let me know in the
 comments section below and I’ll consider your points to focus on for the next
 time. Till then, goodbye and thanks for your time. Have a good time :).
-
-* [Machine Learning](https://medium.com/tag/machine-learning?source=post)
-* [Svm](https://medium.com/tag/svm?source=post)
-* [Support Vector
-Machine](https://medium.com/tag/support-vector-machine?source=post)
-* [Supervised Learning](https://medium.com/tag/supervised-learning?source=post)
-* [Classification](https://medium.com/tag/classification?source=post)
-
-By clapping more or less, you can signal to us which stories really stand out.
-
-### [Prashant Bhapkar](https://medium.com/@prashantbhpkr)
