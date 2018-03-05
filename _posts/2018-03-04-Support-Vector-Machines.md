@@ -232,11 +232,11 @@ di = (W.Transpose . X + b) / ||W||
 
 Let’s assume that the   maximum margin   that we desire to obtain, which is
 feasible, is   Gamma  . Then, for all   Xi  ,   di   should be greater than or
-equal to   Gamma  .
+equal to   Gamma.
 
 (W.Transpose . X + b) / ||W|| >= Gamma
 
-=> W.Transpose . X + b >= Gamma   ||W||
+W.Transpose . X + b >= Gamma   ||W||  
 
 Now, let’s re scale   Gamma   ||W||   to   1  . So,
 
