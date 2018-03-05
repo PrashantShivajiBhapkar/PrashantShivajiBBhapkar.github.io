@@ -155,8 +155,8 @@ would know the “**optimized**” values of the **weight** vector (**W**) and
 implementation/classification, while trying to classify a new example **‘Xk’,
 **we will find the value of **f(Xk)**. We’ll then classify** ‘Xk’ **as a
 positive or negative example based on this value of **f(Xk)**. If **f(Xk)** is
-**positive**, we’ll classify **‘k’** as a **positive **example. If **f(Xk)** is
-**negative**, we’ll classify ‘**k**’ as a **negative **example.
+**positive**, we’ll classify **‘k’** as a **positive** example. If **f(Xk)** is
+**negative**, we’ll classify ‘**k**’ as a **negative** example.
 
 **Finding the Hyper-plane**<br> Now, how do we find the hyper-plane? Let’s
 consider the following 2-dimensional figure.
@@ -187,10 +187,10 @@ either of the sides.
 
 ### **Time For Some Math**
 
-Now for a positive example **Xi**, we can say,<br> ** f(Xi) = W.Transpose . X +
+Now for a positive example **Xi**, we can say,<br>**  f(Xi) = W.Transpose . X +
 b > 0**
 
-Similarly, for a negative example **Xj**, we can say,<br> ** f(Xj) = W.Transpose
+Similarly, for a negative example **Xj**, we can say,<br>**  f(Xj) = W.Transpose
 . X + b < 0**
 
 Now, let’s introduce a variable **Yi**, for mathematical convenience, which
