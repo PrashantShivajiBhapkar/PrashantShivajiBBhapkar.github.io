@@ -198,7 +198,7 @@ Now, let’s introduce a variable **Yi**, for mathematical convenience, which
 represents the class of the* *example **i**. Thus, it can have a value of either
 **+1** or **-1**.
 
-In a more general way, we can say,<br> **Yi * (W.Transpose . X + b) > 0**
+In a more general way, we can say,<br> **Yi* (W.Transpose . X + b) > 0**
 
 Let’s investigate what we just said. Here if **‘i’** belongs to the positive
 class, then **Yi **is positive and **(W.Transpose . X + b)** is also positive.
