@@ -17,7 +17,7 @@ introduction.
 
 ### Introduction
 
-Support Vector Machine or **SVM **is a supervised machine learning algorithm
+Support Vector Machine or **SVM ** is a supervised machine learning algorithm
 which is generally used for classification tasks. The idea was presented by
 Vladimir N. Vapnik and Alexey Ya. Chervonenkis in 1963 assuming that the data
 points are linearly separable. Later, Vladimir N. Vapnik extended this initial
