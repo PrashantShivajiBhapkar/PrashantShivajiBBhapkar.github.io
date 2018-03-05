@@ -228,15 +228,15 @@ referred to as a “constraint”, in mathematical parlance.**
 Now, the distance between a vector, say **Xi**, and our target hyper-plane can
 be given by,
 
-**di = (W.Transpose . X + b) / ||W||**
+di = (W.Transpose . X + b) / ||W||
 
 Let’s assume that the **maximum margin** that we desire to obtain, which is
 feasible, is **Gamma**. Then, for all **Xi**, **di **should be greater than or
 equal to **Gamma**.
 
-**(W.Transpose . X + b) / ||W|| >= Gamma**
+(W.Transpose . X + b) / ||W|| >= Gamma
 
-**=> W.Transpose . X + b >= Gamma * ||W||**
+=> W.Transpose . X + b >= Gamma * ||W||
 
 Now, let’s re scale **Gamma * ||W||** to **1**. So,
 
@@ -248,7 +248,7 @@ Now, let’s bring in **Yi ***(Yi = +1 or -1, represents classes) *to make our
 math a bit more convenient and try to represent the above two equations in just
 one equation.
 
-**Yi * (W.Transpose . X + b) >= 1 ***(oh Math! you’re so beautiful :))*
+Yi * (W.Transpose . X + b) >= 1 (oh Math! you’re so beautiful :))
 
 Here the equality holds true only for support vectors. Thus for a support vector
 **Xi**, we’ll have,
