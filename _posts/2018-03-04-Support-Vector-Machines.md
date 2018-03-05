@@ -89,8 +89,7 @@ the position of the line.
 We can represent the same equation in the following form:<br> **f(x) =
 W.Transpose . X + B,**
 
-where **W** is the **weight** vector which contains the coefficients of **x
-**and **y**.<br> For example, for a line given by x-2y+3 = 0,<br> **W** = [1,
+where **W** is the **weight** vector which contains the coefficients of **x** and **y**.<br> For example, for a line given by x-2y+3 = 0,<br> **W** = [1,
 -2], **X** = [x, y] and bias **b** = 3
 
 > The vector [1, -2] will always be normal to the line y — 2x + 3 = 0. You may try
