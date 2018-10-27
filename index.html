@@ -1,68 +1,346 @@
----
-layout: blog
-title: index
-permalink: /
----
+<!DOCTYPE html>
+<html class="no-js" lang="en">
 
-<div class="navbar-wrapper">
-  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
-      <div class="navbar-header page-scroll">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#page-top" id="i18_title"><span data-i18n="website.title">{{ site.title }}</span></a>
-      </div>
-      <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right" id="i18_navbar">
-          {% for section in site.data.landing %}
-          <li>
-            {% if section.page %}
-              <a class="page-scroll" href="{{section.page}} ">
-            {% else %}
-              <a class="page-scroll" href="{{section.id|prepend:'#'}} ">
-            {% endif %}
-              <span data-i18n="{{ section.i18n }}">{{ section.name }}</span>
-            </a>
-          </li>
-          {% endfor %}
-          {% for language in site.data.index.language %}
-          <li>
-            <a id="set_lang_{{ language.locale }}" class="btn btn-sm set_{{ language.locale }}" data-locale="{{ language.locale }}">
-              <img src="{{ language.flag | prepend: site.baseurl }}" alt="language.flag" height="16" width="16">
-            </a>
-          </li>
-          {% endfor %}
-        </ul>
-      </div>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Prashant Shivaji Bhapkar</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
     </div>
-  </nav>
-</div>
-{% if site.index_carousel %}
-{% include carousel.html %}
-{% endif %}
+    <!-- End #mobile-menu-toggle -->
+    <header class="sticky">
+        <div id="mobile-menu-close">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <ul id="menu" class="shadow">
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+        </ul>
+    </header>
+    <!-- End header -->
 
-{% for section in site.data.landing %}
-{% assign loopindex = forloop.index | modulo: 2 %}
-<section id="{{ section.id }}" class="features {% if loopindex != 1 %} gray-section {% endif %} {{ section.css }}" style="margin-top: 0;">
-  {% include sections/{{section.tpl}} %}
-</section>
-{% endfor %}
-<style>
-iframe {
-  -moz-transform: scale(0.25, 0.25);
-  -webkit-transform: scale(0.25, 0.25);
-  -o-transform: scale(0.25, 0.25);
-  -ms-transform: scale(0.25, 0.25);
-  transform: scale(0.25, 0.25);
-  -moz-transform-origin: top left;
-  -webkit-transform-origin: top left;
-  -o-transform-origin: top left;
-  -ms-transform-origin: top left;
-  transform-origin: top left;
-}
-</style>
-<iframe src="https://www.maimemo.com/share/page/?uid=779139&pid=660" style="display: none;"></iframe>
+    <div id="lead">
+        <div id="lead-content">
+            <h1>Prashant Shivaji Bhapkar</h1>
+            <h2>Graduate Student at The University of Texas, Dallas</h2>
+        </div>
+        <!-- End #lead-content -->
+
+        <div id="lead-overlay"></div>
+
+        <div id="lead-down">
+            <span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </span>
+        </div>
+        <!-- End #lead-down -->
+    </div>
+    <!-- End #lead -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="heading">About Me</h2>
+                </div>
+                <div class="col-md-8">
+                    <p>
+						Hey there! I am gradute student at the University of Texas, Dallas with deep interest in Data Science. Apart from my passion for the domain, I have hands-on and professional experience (<a href="https://asuragen.com/">Asuragen </a> and <a href="https://www.infosys.com/">Infosys Limited</a>) in implementing relevant concepts pertaining to Machine Learning, Deep Learning, Statistics and Computer Science while working with large data sets.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End #about -->
+
+    <div id="experience" class="background-alt">
+        <h2 class="heading">Experience</h2>
+        <div id="experience-timeline">
+            <div data-date="June 2018 – August 2018">
+                <h3>Asuragen</h3>
+                <h4>Machine Learning Intern</h4>
+                <ul>
+                    <li>
+                        Implemented various Machine Learning algorithms (Logistic Regression, Decision Trees, Random Forest, SVM, Naive Bayes, KNN, Adaboost, and CNN) on 50000+ human genomic samples (images) to classify them as positive or negative cases of a given genetic disorder
+                    </li>
+                    <li>
+                        Analyzed bias and variance of these models using 5-fold cross-validation and optimized hyperparameters using grid search and random search
+                    </li>
+					<li>
+                        Analyzed and compared the best versions of these models based on precision, recall, F1 scores, learning curve, AUROC and AUPR curve with random forest exhibiting the highest F1 score of 0.948 and an AUPRC value of 0.993
+                    </li>
+					<li>
+                        Studied research papers solving similar problems with deep learning using CNNs
+                    </li>
+                </ul>
+            </div>
+
+            <div data-date="December 2014 – july 2017">
+                <h3>Infosys Limited</h3>
+                <h4>Senior Systems Engineer</h4>
+                <ul>
+                    <li>
+                         Analyzed, pre-processed and converted critical purchase order (PO) data containing 3,000,000 records in the new Oracle system by writing SQL queries and a PL/SQL program enabling the organization to carry out routine business activities in the new system
+                    </li>
+					<li>
+                         Developed PL/SQL program to process transactions data comprising 800,000+ records resulting in much higher data consistency with respect to the target system and an increased efficiency of about 50% in the migration program
+                    </li>
+					<li>
+                         Expedited development of a PL/SQL program to generate excel reports by reverse engineering existing complex PL/SQL code ultimately saving 70% - 80% time and effort
+                    </li>
+                </ul>
+            </div>
+			
+        </div>
+    </div>
+    <!-- End #experience -->
+
+    <div id="education">
+        <h2 class="heading">Education</h2>
+        <div class="education-block">
+            <h3>The University of Texas, Dallas</h3>
+            <span class="education-date">August 2017 - May 2019</span>
+            <h4><b>Masters in Information Technology (Data Science/Analytics)  |  GPA: 3.92/4.0</b></h4>
+            <ul>
+                <li>
+                    Coursework: Statistics for Data Science, Data Science with Python, Business Analytics with SAS, Advanced Business Analytics with R, Big Data Analytics, Business Data Warehousing, Econometrics and Time-Series Analytics, Operations Management, Agile Project Management, Systems Analysis and Project Management
+                </li>
+				<li>
+                    Implemented Machine Learning Algorithms like Logistic Regression, Random Forest, Support Vector Machine, Naïve Bayes, K-Nearest Neighbors and decision trees on a dataset comprising of 64,000 records to predict the employment status with the best model exhibiting an F1 score of 92%
+                </li>
+            </ul>
+        </div>
+
+        <div class="education-block">
+            <h3>University of Pune</h3>
+            <span class="education-date">August 2010 - May 2014</span>
+            <h4><b>Bachelor of Engineering in Computer Science  |  GPA: 3.6/4.0 </b><i>(approx. after conversion)</i> </h4>
+            <ul>
+                <li>
+                    Research Project: Morphology-Based POS Tagger (NLP)
+					<ul>
+						<li>
+							Headed and mentored a team of 3 people to develop a Natural Language Processing (NLP) system for the Hindi Language
+						</li>
+						<li>
+							Analyzed large lingual datasets and designed a novel heuristic algorithm for system design
+						</li>
+						<li>
+							Implemented Parts-Of-Speech tagging, stemming, and a predictive algorithm to predict “sense” of a word in an ambiguous sentence
+						</li>
+					</ul>
+                </li>
+            </ul>
+        </div>
+        <!-- End .education-block -->
+
+        <div class="education-block">
+            <h3>Kendriya Vidyalaya, India</h3>
+            <span class="education-date">Aug 2000 - May 2010</span>
+            <h4>Primary and Secondary Education</h4>
+            <ul>
+                <li>
+                    Been in top 5-6 academic performers throughout
+                </li>
+                <li>
+                    Represented the home state at National level competition in fine arts ending up as runner up ultimately
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- End #education -->
+
+    <div id="projects" class="background-alt">
+        <h2 class="heading">Projects</h2>
+        <div class="container">
+		
+			<div class="education-block">
+                <h3>Speech Recognition with Deep Learning</h3>
+                <span class="education-date">Feb 2018 – Feb 2018</span>
+                <h4>Dallas, TX</h4>
+                <ul>
+                    <p>
+                        "Alexa", "Hey Google", "OK Google" - these are all trigger words that wake your chatbots up. Recognizing these words correctly is a complex task in itself. Here, I implemented a recurrent neural network with GRUs (Gated Recurrent Units) to recognize the trigger word "activate".
+                    </p>
+                </ul>
+            </div>
+			
+            <div class="education-block">
+                <h3>Natural Language Processing with Deep Learning</h3>
+                <span class="education-date">Feb 2018 – Feb 2018</span>
+                <h4>Dallas, TX</h4>
+                <ul>
+                    <p>
+                        When we write messages in some messaging applications, they suggest emoticons based on the immediate previous text input. This fun project tries to implement such a functionality. A recurrent neural network (RNN) model was built using LSTM (Long Short-Term Memory) units that helped in predicting appropriate emoticons based on the immediate previous text. Already trained 50-dimensional GloVe word vectors were used to represent word embeddings.
+                    </p>
+                </ul>
+            </div>
+            <!-- End .project -->
+
+            <div class="education-block">
+                <h3>Neural Machine Translation with Deep Learning</h3>
+                <span class="education-date">Feb 2018 – Feb 2018</span>
+                <h4>Dallas, TX</h4>
+                <ul>
+                    <p>
+                        A very interesting project! Our machines (computers) don't seem to like much variety when it comes to data types and formats. They have specific acceptable formats. In this project, I implemented a deep learning model to solve a natural language processing problem - natural machine translation. This helped in converting dates written in natural language (English) in various data formats into one consistent, machine-readable format. For example, the model was able to convert dates written in English, say “25th Jan 17” into machine-readable format - "2017-01-25".
+                    </p>
+                </ul>
+            </div>
+            <!-- End .project -->
+
+            <div class="education-block">
+                <h3>Object Detection with Deep Learning (YOLO)</h3>
+                <span class="education-date">Jan 2018 – Jan 2018</span>
+                <h4>Dallas, TX</h4>
+                <ul>
+                    <p>
+                        "Autonomous car driving" - this sounds so cool. But there are various complexities involved in this. One of the problems is detection of objects. If your autonomous car is not able to detect objects, then it might run over those! This gives an idea of how much important object detection is. But no worries, thanks to deep learning models, we are able to develop algorithms to solve this problem. In this project, a convolutional neural network was developed in which a very powerful algorithm - YOLO algorithm was implemented to detect objects. Specifically, the target object to identify was "car". Hence the name - "car detection".
+                    </p>
+                </ul>
+            </div>
+            <!-- End .project -->
+
+            <div class="education-block">
+                <h3>Face Verification and Recognition (FaceNet)</h3>
+                <span class="education-date">Jan 2018 – Jan 2018</span>
+                <h4>Dallas, TX</h4>
+                <ul>
+                    <p>
+                        Implemented Convolutional Neural Networks (CNN) (FaceNet) for face verification and recognition.
+                    </p>
+                </ul>
+            </div>
+            <!-- End .project -->
+			
+			<div class="education-block">
+                <h3>Sign Digit Classification with Residual Networks (ResNets)</h3>
+                <span class="education-date">Jan 2018 – Jan 2018</span>
+                <h4>Dallas, TX</h4>
+                <ul>
+                    <p>
+                        Built a Convolutional Neural Network (CNN) in TensorFlow to classify digit-sign images with 80% accuracy and enhanced the same by implementing ResNets (Residual Networks) resulting in an increased accuracy of 86.67%.
+                    </p>
+                </ul>
+            </div>
+            <!-- End .project -->
+			
+			<div class="education-block">
+                <h3>Neural Style Transfer with Deep Learning</h3>
+                <span class="education-date">Jan 2018 – Jan 2018</span>
+                <h4>Dallas, TX</h4>
+                <ul>
+                    <p>
+                        There are many applications present today that try to render one image in the stye of other. For example, you might want to have your own image in the style of the "Monalisa" painting. This is possible with the help of neural style transfer. In this project, an already trained convolutional neural network (VGG-19) was leveraged and a model was built on top of that to carry out neural style transfer.
+                    </p>
+                </ul>
+            </div>
+            <!-- End .project -->
+			
+			<div class="education-block">
+                <h3>Morphology-Based POS Tagger</h3>
+                <span class="education-date">Dec 2013 – Jun 2014</span>
+                <h4>Pune, India</h4>
+                <ul>
+                    <p>
+                        This was my undergrad project. I had led my team in developing a natural language processing (NLP) system for the Hindi language. We had implemented techniques like parts of speech tagging and stemming. Also, we had implemented a novel disambiguation logic to detect ambiguities in a given Hindi sentence.
+                    </p>
+                </ul>
+            </div>
+            <!-- End .project -->
+			
+        </div>
+    </div>
+    <!-- End #projects -->
+
+    <div id="skills">
+        <h2 class="heading">Skills</h2>
+        <ul>
+            <li>Python</li>
+            <li>SQL</li>
+            <li>PL/SQL</li>
+			<li>Hadoop Ecosystem</li>
+			<li>Tensorflow</li>
+			<li>Keras</li>
+			<li>Pandas</li>
+			<li>Plotly</li>
+			<li>Matplotlib</li>
+			<li>Seaborn</li>
+		</ul>
+		<ul>
+            <li>Machine Learning</li>
+            <li>Deep Learning</li>
+			<li>Big Data Analytics</li>
+            <li>Data Visualization</li>
+			<li>Statistics</li>
+			<li>Data Visualization</li>
+			<li>Data Visualization</li>
+			<li>Data Visualization</li>
+        </ul>
+    </div>
+    <!-- End #skills -->
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright">
+                    <p>
+                        Copyright &copy; 2018 Prashant Shivaji Bhapkar
+                    </p>
+                </div>
+                <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="col-sm-5 social">
+                    <ul>
+                        <li>
+                            <a href="mailto:prashantbhpkr@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/prashant-shivaji-bhapkar-9b076623/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/PrashantShivajiBhapkar" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/prashant.bhapkar.1" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+</body>
+
+</html>
